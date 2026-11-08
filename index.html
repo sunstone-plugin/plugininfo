@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunstone SMP — The Player Guide</title>
+    <title>Sunstone SMP Plugin</title>
     <meta name="description" content="Everything you need to know about stones on Sunstone SMP, in plain words.">
     <link rel="icon" type="image/png" href="Static/Assets/Images/Logo.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -27,17 +27,27 @@
             <a data-nav href="#tips" class="transition hover:text-amber-300">Tips</a>
         </nav>
 
-        <button id="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" class="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-slate-300 md:hidden">
-            <svg id="icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-            <svg id="icon-close" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        <button id="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false"
+                class="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-slate-300 md:hidden">
+            <svg id="icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <svg id="icon-close" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
         </button>
     </div>
 
-    <nav id="mobile-menu" class="hidden flex-col gap-1 border-t border-white/5 bg-slate-950 px-4 py-3 text-sm font-medium text-slate-300 md:hidden">
-        <a data-nav href="#basics" class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Basics</a>
-        <a data-nav href="#stones" class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Stones</a>
+    <nav id="mobile-menu"
+         class="hidden flex-col gap-1 border-t border-white/5 bg-slate-950 px-4 py-3 text-sm font-medium text-slate-300 md:hidden">
+        <a data-nav href="#basics"
+           class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Basics</a>
+        <a data-nav href="#stones"
+           class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Stones</a>
         <a data-nav href="#crafting" class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Crafting</a>
-        <a data-nav href="#trust" class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Trust</a>
+        <a data-nav href="#trust"
+           class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Trust</a>
         <a data-nav href="#commands" class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Commands</a>
         <a data-nav href="#tips" class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Tips</a>
     </nav>
@@ -61,15 +71,14 @@
             Everything you need to know about stones, in plain words. No settings files, no code.
         </p>
         <p class="mt-4 text-sm text-slate-500">
-            Times are in seconds. One heart is 2 health points, so <span class="text-slate-300">"6 damage"</span> means 3 hearts.
+            All time measurements are in seconds. Damage and regen are measured in health points , so <span
+                class="text-slate-300">"6 HP"</span> is 3 hearts.
         </p>
 
         <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
-            <a href="#basics" class="rounded-xl bg-amber-500 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:bg-amber-400">
-                Start Reading
-            </a>
-            <a href="#stones" class="rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:bg-white/10">
-                See All Stones
+            <a href="#stones"
+               class="rounded-xl bg-amber-500 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:bg-amber-400">
+                Check out the Stones
             </a>
         </div>
     </div>
@@ -81,75 +90,111 @@
     <section id="basics" class="scroll-mt-24 border-t border-white/5 py-16 sm:py-24">
         <div class="mb-12 max-w-2xl">
             <p class="text-sm font-semibold uppercase tracking-wider text-amber-400">Section 1</p>
-            <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">The Basics</h2>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Basic Info</h2>
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2">
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                 <h3 class="text-lg font-semibold text-white">What is a stone?</h3>
                 <p class="mt-3 text-sm leading-relaxed text-slate-400">
-                    A <span class="font-semibold text-slate-200">stone</span> is a special item that gives you a power. Each stone has:
+                    A <span class="font-semibold text-slate-200">stone</span> is a special equipped item that gives you
+                    abilities. Each stone has:
                 </p>
                 <ul class="mt-4 space-y-2 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-amber-400">•</span><span><span class="font-semibold text-slate-200">A passive</span> (some stones) — works the whole time the stone is equipped.</span></li>
-                    <li class="flex gap-2"><span class="text-amber-400">•</span><span><span class="font-semibold text-slate-200">An ability</span> — switch it on, it runs for a few seconds, then goes on cooldown.</span></li>
+                    <li class="flex gap-2"><span class="text-amber-400">•</span><span><span
+                            class="font-semibold text-slate-200">A passive</span> (only some stones have it) - give you an effect or special modifier whenever the stone is equipped.</span>
+                    </li>
+                    <li class="flex gap-2"><span class="text-amber-400">•</span><span><span
+                            class="font-semibold text-slate-200">An ability</span> - triggered by a keybind, lasts for a few seconds and then goes on cooldown</span>
+                    </li>
                 </ul>
             </article>
 
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-                <h3 class="text-lg font-semibold text-white">Getting your first stone</h3>
+                <h3 class="text-lg font-semibold text-white">Spawn Stones</h3>
                 <p class="mt-3 text-sm leading-relaxed text-slate-400">
-                    The first time you join the server you get <span class="font-semibold text-slate-200">one random stone</span> to start with. You only get this once, and it is never a Sunstone, Moonstone or Dragon Stone.
+                    The first time you join the server you get <span class="font-semibold text-slate-200">one random stone</span>
+                    to start with. You only get this once, and it is never a Sunstone, Moonstone or Dragon Stone (these
+                    are event stones).
                 </p>
             </article>
 
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                 <h3 class="text-lg font-semibold text-white">Equipping a stone</h3>
                 <p class="mt-3 text-sm leading-relaxed text-slate-400">
-                    Hold the stone and <span class="font-semibold text-slate-200">right-click</span>. It leaves your hand and becomes equipped. You can have <span class="font-semibold text-slate-200">2 stones equipped at once</span>. Equipped stones show on your action bar, above your hotbar.
+                    Hold the stone and <span class="font-semibold text-slate-200">right-click</span>. It leaves your
+                    hand and becomes equipped. You can have <span class="font-semibold text-slate-200">2 stones equipped at once</span>.
+                    Equipped stones show on a HUD above your hotbar.
                 </p>
             </article>
 
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-                <h3 class="text-lg font-semibold text-white">Taking a stone off</h3>
+                <h3 class="text-lg font-semibold text-white">Unequipping a stone</h3>
                 <p class="mt-3 text-sm leading-relaxed text-slate-400">
-                    Type <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone unequip</code>. Your equipped stones go back to your inventory. After that you must <span class="font-semibold text-slate-200">wait 60 seconds</span> before you can equip another one.
+                    Type <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone unequip</code>. Your
+                    equipped stones go back to your inventory. After that you must <span
+                        class="font-semibold text-slate-200">wait 60 seconds</span> before you can equip another one.
                 </p>
             </article>
         </div>
 
         <!-- Using an ability -->
         <article class="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-            <h3 class="text-lg font-semibold text-white">Using a stone's ability</h3>
+            <h3 class="text-lg font-semibold text-white">Activate a stone's ability</h3>
             <p class="mt-3 text-sm text-slate-400">Any of these works:</p>
             <ul class="mt-4 space-y-2 text-sm text-slate-400">
-                <li class="flex gap-2"><span class="text-amber-400">•</span><span>Press the stone key. By default: <span class="font-semibold text-slate-200">Stone 1</span> is <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">F</code> (swap hands), <span class="font-semibold text-slate-200">Stone 2</span> is <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">Shift + F</code>.</span></li>
-                <li class="flex gap-2"><span class="text-amber-400">•</span><span>Sneak + right-click with the stone in your hand, or with an empty hand (uses your first stone).</span></li>
-                <li class="flex gap-2"><span class="text-amber-400">•</span><span>Type <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use</code> (stone 1) or <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use 2</code> (stone 2).</span></li>
+                <li class="flex gap-2"><span class="text-amber-400">•</span><span>Press the stone key. By default: <span
+                        class="font-semibold text-slate-200">Stone 1</span> is set to your offhand slot, <span
+                        class="font-semibold text-slate-200">Stone 2</span> is Sneak + Offhand. This can be changed with <a
+                        href="#commands" class="font-medium text-fg-brand underline">commands</a></span>
+                </li>
+                <!--li class="flex gap-2"><span class="text-amber-400">•</span><span>Sneak + right-click with the stone in your hand, or with an empty hand (uses your first stone).</span>
+                </li-->
+                <li class="flex gap-2"><span class="text-amber-400">•</span><span>Type <code
+                        class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use</code> (stone 1) or <code
+                        class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use 2</code> (stone 2). These commands exist so you can use a mod like <a
+                        href="https://modrinth.com/mod/bindcommands" class="font-medium text-fg-brand underline">BindCommands</a> to link a stone to a custom key. You can then set your stone to activate with no hotkey.</span>
+                </li>
             </ul>
-            <p class="mt-4 text-sm text-slate-400">The action bar shows <span class="font-semibold text-emerald-400">Ready</span>, <span class="font-semibold text-amber-400">Active</span>, or the seconds left on cooldown for each stone.</p>
+            <p class="mt-4 text-sm text-slate-400">The action bar shows <span class="font-semibold text-emerald-400">Ready</span>,
+                <span class="font-semibold text-amber-400">Active</span>, or the seconds left on cooldown for each
+                stone.</p>
         </article>
 
         <!-- Changing keys -->
         <article class="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-            <h3 class="text-lg font-semibold text-white">Changing your keys</h3>
+            <h3 class="text-lg font-semibold text-white">Changing your stone activation keybinds</h3>
             <p class="mt-3 text-sm leading-relaxed text-slate-400">
-                Type <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger</code>. Click the blue options in chat to pick a different key for each stone. There are 20 key choices, picked because they rarely get in the way of a fight. Choosing a key the other stone already uses swaps them. <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger reset</code> puts everything back to F and Shift+F.
+                Type <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger [1|2]</code>. Click
+                the blue options in chat to pick a different key for each stone. There are 20 key choices, picked
+                because they rarely get in the way of a fight. Choosing a key the other stone already uses swaps them.
+                <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger reset</code> puts
+                everything back to F and Shift+F. The activation keys in the HUD automatically update depending on your
+                specific keybinds.
             </p>
             <p class="mt-3 text-sm leading-relaxed text-slate-400">
-                If you use a mod that binds keys to commands, bind it to <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use 1</code> and <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use 2</code>, then pick <span class="font-semibold text-slate-200">Command only</span> in the menu so the normal key doesn't also fire the stone.
+                If you use a mod that binds keys to commands, bind it to <code
+                    class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use 1</code> and <code
+                    class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use 2</code>, then pick <span
+                    class="font-semibold text-slate-200">Command only</span> in the menu so the normal key doesn't also
+                fire the stone. You can also do <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone
+                trigger 1 none</code>
             </p>
         </article>
 
         <!-- If you die -->
         <article class="mt-6 rounded-2xl border border-red-500/20 bg-red-500/[0.04] p-6 sm:p-8">
             <h3 class="flex items-center gap-2 text-lg font-semibold text-white">
-                <span>💀</span> If you die
+                Stones on Death
             </h3>
             <ul class="mt-4 space-y-2 text-sm text-slate-400">
-                <li class="flex gap-2"><span class="text-red-400">•</span><span><span class="font-semibold text-slate-200">One</span> of your equipped stones, picked at random, drops where you died. Anyone can pick it up.</span></li>
-                <li class="flex gap-2"><span class="text-red-400">•</span><span>If your server keeps your inventory when you die, the stones in your inventory drop as well.</span></li>
-                <li class="flex gap-2"><span class="text-red-400">•</span><span>A dropped stone can despawn (about 5 minutes), burn, or fall into the void. <span class="font-semibold text-red-300">A lost stone is gone for good.</span></span></li>
+                <li class="flex gap-2"><span class="text-red-400">•</span><span><span
+                        class="font-semibold text-slate-200">One</span> of your equipped stones, picked at random, drops where you died. Anyone can pick it up.</span>
+                </li>
+                <!--li class="flex gap-2"><span class="text-red-400">•</span><span>If your server keeps your inventory when you die, the stones in your inventory drop as well.</span></li-->
+                <li class="flex gap-2"><span class="text-red-400">•</span><span>A dropped stone can despawn (about 5 minutes), burn, or fall into the void. <span
+                        class="font-semibold text-red-300">A lost stone is gone for good, and it doesn't reimburse the crafting limit.</span></span>
+                </li>
             </ul>
         </article>
 
@@ -157,12 +202,19 @@
         <article class="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
             <h3 class="text-lg font-semibold text-white">Who your stones hurt</h3>
             <p class="mt-3 text-sm leading-relaxed text-slate-400">
-                Stone damage hits players and mobs around you, with some exceptions. Your stones <span class="font-semibold text-slate-200">never</span> hurt:
+                Stone damage <span class="font-semibold text-slate-200">hits players and mobs around you</span>, with
+                some exceptions. Your stones <span class="font-semibold text-slate-200">never</span> hurt:
             </p>
             <div class="mt-4 grid gap-3 sm:grid-cols-3">
-                <div class="rounded-xl border border-emerald-500/20 bg-emerald-500/5 px-4 py-3 text-sm text-slate-300">You</div>
-                <div class="rounded-xl border border-emerald-500/20 bg-emerald-500/5 px-4 py-3 text-sm text-slate-300">Players you trust</div>
-                <div class="rounded-xl border border-emerald-500/20 bg-emerald-500/5 px-4 py-3 text-sm text-slate-300">Creative / Spectator players</div>
+                <div class="rounded-xl border border-emerald-500/20 bg-emerald-500/5 px-4 py-3 text-sm text-slate-300">
+                    You
+                </div>
+                <div class="rounded-xl border border-emerald-500/20 bg-emerald-500/5 px-4 py-3 text-sm text-slate-300">
+                    Trusted Players<br><code
+                        class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trust [username]</code></div>
+                <div class="rounded-xl border border-emerald-500/20 bg-emerald-500/5 px-4 py-3 text-sm text-slate-300">
+                    Creative / Spectator players
+                </div>
             </div>
             <!--p class="mt-4 text-sm leading-relaxed text-slate-400">
                 Stone damage <span class="font-semibold text-slate-200">ignores armor</span>, so armor will not protect against it. A <span class="font-semibold text-slate-200">Totem of Undying</span> still saves a player, though.
@@ -176,7 +228,11 @@
             <p class="text-sm font-semibold uppercase tracking-wider text-amber-400">Section 2</p>
             <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">All The Stones</h2>
             <p class="mt-4 text-sm leading-relaxed text-slate-400">
-                <span class="font-semibold text-slate-200">Cooldown</span> is how long you wait after using a stone before you can use it again. <span class="font-semibold text-slate-200">Lasts</span> is how long the ability stays on.
+                Every stone has a <span class="font-semibold text-slate-200">cooldown</span>, which is the wait time
+                after you use a stone's ability before you can use it again. The amount of time an ability <span
+                    class="font-semibold text-slate-200">lasts</span>
+                is how long the effects of that ability are active. <span class="font-semibold text-slate-200">Passive abilities</span>
+                are always active as long as you have the stone equipped.
             </p>
         </div>
 
@@ -186,7 +242,9 @@
             <!-- Plant -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-emerald-500">
                 <div class="flex items-center justify-between">
-                    <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Plant_Stone.png" alt="Plant Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Plant Stone</h4>
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                            src="Static/Assets/Images/Stones/Plant_Stone.png" alt="Plant Stone icon"
+                            class="h-8 w-8 flex-none [image-rendering:pixelated]"> Plant Stone</h4>
                 </div>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-emerald-500/10 px-2.5 py-1 text-emerald-300">Cooldown 60s</span>
@@ -195,196 +253,288 @@
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
                     <li class="flex gap-2"><span class="text-emerald-400">•</span>Fills your hunger bar to full.</li>
                     <li class="flex gap-2"><span class="text-emerald-400">•</span>Gives Regeneration II for 15s.</li>
-                    <li class="flex gap-2"><span class="text-emerald-400">•</span>Throws leaves at the nearest enemy within 24 blocks, ~every 1.2s, 2 damage each.</li>
-                    <li class="flex gap-2"><span class="text-emerald-400">•</span>Last leaf heals you 4 (2 hearts) if it hits.</li>
+                    <li class="flex gap-2"><span class="text-emerald-400">•</span>Throws leaves at the nearest enemy
+                        within 24 blocks, ~every 1.2s, 2 damage each.
+                    </li>
+                    <li class="flex gap-2"><span class="text-emerald-400">•</span>Last leaf heals you 4 (2 hearts) if it
+                        hits.
+                    </li>
                 </ul>
             </article>
 
             <!-- Lightning -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-yellow-400">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Lightning_Stone.png" alt="Lightning Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Lightning Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Lightning_Stone.png" alt="Lightning Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Lightning Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-yellow-400/10 px-2.5 py-1 text-yellow-300">Cooldown 70s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts up to 15s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-yellow-400">•</span>A charge bar fills for 6.5s — your next hit is the "empowered" strike.</li>
-                    <li class="flex gap-2"><span class="text-yellow-400">•</span>Empowered strike: up to 4.5 damage depending on charge, strikes lightning.</li>
-                    <li class="flex gap-2"><span class="text-yellow-400">•</span>Next 5s: each crit (hit while falling) does +1.6 damage.</li>
-                    <li class="flex gap-2"><span class="text-yellow-400">•</span>No hit within 10s and the surge fades.</li>
+                    <li class="flex gap-2"><span class="text-yellow-400">•</span>A charge bar fills for 6.5s — your next
+                        hit is the "empowered" strike.
+                    </li>
+                    <li class="flex gap-2"><span class="text-yellow-400">•</span>Empowered strike: up to 4.5 damage
+                        depending on charge, strikes lightning.
+                    </li>
+                    <li class="flex gap-2"><span class="text-yellow-400">•</span>Next 5s: each crit (hit while falling)
+                        does +1.6 damage.
+                    </li>
+                    <li class="flex gap-2"><span class="text-yellow-400">•</span>No hit within 10s and the surge fades.
+                    </li>
                 </ul>
                 <p class="mt-3 text-xs italic text-slate-500">Tip: wait for a full charge before you swing.</p>
             </article>
 
             <!-- Shadow -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-purple-500">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Shadow_Stone.png" alt="Shadow Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Shadow Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Shadow_Stone.png" alt="Shadow Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Shadow Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-purple-500/10 px-2.5 py-1 text-purple-300">Cooldown 60s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 10s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-purple-400">•</span>You turn invisible — others can't see you at all, even in armor.</li>
+                    <li class="flex gap-2"><span class="text-purple-400">•</span>You turn invisible — others can't see
+                        you at all, even in armor.
+                    </li>
                     <li class="flex gap-2"><span class="text-purple-400">•</span>Speed III.</li>
                 </ul>
             </article>
 
             <!-- Melee -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-red-500">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Melee_Stone.png" alt="Melee Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Melee Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Melee_Stone.png" alt="Melee Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Melee Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-red-500/10 px-2.5 py-1 text-red-300">Cooldown 50s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 7s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-red-400">•</span>Strength II for 7 seconds. Simple and strong for close fights.</li>
+                    <li class="flex gap-2"><span class="text-red-400">•</span>Strength II for 7 seconds. Simple and
+                        strong for close fights.
+                    </li>
                 </ul>
             </article>
 
             <!-- Water -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-blue-500">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Water_Stone.png" alt="Water Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Water Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Water_Stone.png" alt="Water Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Water Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-blue-500/10 px-2.5 py-1 text-blue-300">Cooldown 55s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 15s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-blue-400">•</span>A wave carries you forward (the way you look) for ~5s.</li>
-                    <li class="flex gap-2"><span class="text-blue-400">•</span>Enemies touched take ~2 damage every half second, pushed back and up.</li>
+                    <li class="flex gap-2"><span class="text-blue-400">•</span>A wave carries you forward (the way you
+                        look) for ~5s.
+                    </li>
+                    <li class="flex gap-2"><span class="text-blue-400">•</span>Enemies touched take ~2 damage every half
+                        second, pushed back and up.
+                    </li>
                     <li class="flex gap-2"><span class="text-blue-400">•</span>Wave ends → Strength II for 3.5s.</li>
                 </ul>
             </article>
 
             <!-- Fire -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-orange-500">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Fire_Stone.png" alt="Fire Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Fire Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Fire_Stone.png" alt="Fire Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Fire Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-orange-500/10 px-2.5 py-1 text-orange-300">Cooldown 55s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 8s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-orange-400">•</span>A fireball charges over your head for 5s, then flies where you look.</li>
-                    <li class="flex gap-2"><span class="text-orange-400">•</span>Impact: 4.5 block radius, 8 damage (4 hearts), sets enemies on fire for 5s.</li>
-                    <li class="flex gap-2"><span class="text-orange-400">•</span>Doesn't break blocks or start ground fires.</li>
+                    <li class="flex gap-2"><span class="text-orange-400">•</span>A fireball charges over your head for
+                        5s, then flies where you look.
+                    </li>
+                    <li class="flex gap-2"><span class="text-orange-400">•</span>Impact: 4.5 block radius, 8 damage (4
+                        hearts), sets enemies on fire for 5s.
+                    </li>
+                    <li class="flex gap-2"><span class="text-orange-400">•</span>Doesn't break blocks or start ground
+                        fires.
+                    </li>
                 </ul>
             </article>
 
             <!-- Earth -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-stone-400">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Earth_Stone.png" alt="Earth Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Earth Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Earth_Stone.png" alt="Earth Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Earth Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-stone-400/10 px-2.5 py-1 text-stone-300">Cooldown 50s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 15s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
                     <li class="flex gap-2"><span class="text-stone-400">•</span>Resistance II for 15s.</li>
-                    <li class="flex gap-2"><span class="text-stone-400">•</span>An obsidian dome, ~11 blocks across, grows around you.</li>
-                    <li class="flex gap-2"><span class="text-stone-400">•</span>Replaces almost anything it touches (not obsidian, bedrock or chests) — everything is put back when it ends.</li>
+                    <li class="flex gap-2"><span class="text-stone-400">•</span>An obsidian dome, ~11 blocks across,
+                        grows around you.
+                    </li>
+                    <li class="flex gap-2"><span class="text-stone-400">•</span>Replaces almost anything it touches (not
+                        obsidian, bedrock or chests) with obsidian to complete the dome, and everything is put back when
+                        it ends.
+                    </li>
                 </ul>
             </article>
 
             <!-- Speed -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-cyan-400">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Speed_Stone.png" alt="Speed Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Speed Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Speed_Stone.png" alt="Speed Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Speed Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-cyan-400/10 px-2.5 py-1 text-cyan-300">Cooldown 35s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 8s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-cyan-400">•</span>Dash forward where you look (no fall damage from the dash).</li>
+                    <li class="flex gap-2"><span class="text-cyan-400">•</span>Dash forward where you look (no fall
+                        damage from the dash).
+                    </li>
                     <li class="flex gap-2"><span class="text-cyan-400">•</span>Speed III for 8 seconds.</li>
                 </ul>
             </article>
 
             <!-- Health -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-pink-500">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Health_Stone.png" alt="Health Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Health Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Health_Stone.png" alt="Health Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Health Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-pink-500/10 px-2.5 py-1 text-pink-300">Cooldown 90s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 10s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-pink-400">•</span><span class="font-semibold text-slate-300">Always on:</span> +5 max health (2.5 hearts) while equipped.</li>
-                    <li class="flex gap-2"><span class="text-pink-400">•</span>Ability: Regeneration III (5s), Health Boost III (10s), Resistance II (10s).</li>
+                    <li class="flex gap-2"><span class="text-pink-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> +5 max health (2.5 hearts) while
+                        equipped.
+                    </li>
+                    <li class="flex gap-2"><span class="text-pink-400">•</span>Ability: Regeneration III (5s), Health
+                        Boost III (10s), Resistance II (10s).
+                    </li>
                 </ul>
             </article>
 
             <!-- Escaper -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-violet-500">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Escaper_Stone.png" alt="Escaper Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Escaper Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Escaper_Stone.png" alt="Escaper Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Escaper Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-violet-500/10 px-2.5 py-1 text-violet-300">Cooldown 45s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts ~3s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-violet-400">•</span>Teleport up to 14 blocks where you look.</li>
-                    <li class="flex gap-2"><span class="text-violet-400">•</span>Enemy players within 6 blocks of your start point are frozen for ~2.75s (trusted players excluded).</li>
+                    <li class="flex gap-2"><span class="text-violet-400">•</span>Teleport up to 14 blocks where you
+                        look.
+                    </li>
+                    <li class="flex gap-2"><span class="text-violet-400">•</span>Enemy players within 6 blocks of your
+                        start point are frozen for ~2.75s (trusted players excluded).
+                    </li>
                 </ul>
                 <p class="mt-3 text-xs italic text-slate-500">Great for escaping, or for a head start.</p>
             </article>
 
             <!-- Miner -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-amber-500">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Miner_Stone.png" alt="Miner Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Miner Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Miner_Stone.png" alt="Miner Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Miner Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-amber-500/10 px-2.5 py-1 text-amber-300">Cooldown 50s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 10s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-amber-400">•</span><span class="font-semibold text-slate-300">Always on:</span> Haste I while equipped.</li>
-                    <li class="flex gap-2"><span class="text-amber-400">•</span>Ability: pickaxe blocks also break a 3×3 square around them. Containers, liquids and unbreakables are left alone.</li>
+                    <li class="flex gap-2"><span class="text-amber-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> Haste I while equipped.
+                    </li>
+                    <li class="flex gap-2"><span class="text-amber-400">•</span>Ability: pickaxe blocks also break a 3×3
+                        square around them. Containers, liquids and unbreakables are left alone.
+                    </li>
                 </ul>
             </article>
 
             <!-- Mischief -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-fuchsia-500">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Mischief_Stone.png" alt="Mischief Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Mischief Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Mischief_Stone.png" alt="Mischief Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Mischief Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-fuchsia-500/10 px-2.5 py-1 text-fuchsia-300">Cooldown 45s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 15s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-fuchsia-400">•</span>Every enemy player within 12 blocks gets Blindness + Weakness II for 15s.</li>
-                    <li class="flex gap-2"><span class="text-fuchsia-400">•</span>Trusted players and Creative/Spectator are unaffected.</li>
+                    <li class="flex gap-2"><span class="text-fuchsia-400">•</span>Every enemy player within 12 blocks
+                        gets Blindness + Weakness II for 15s.
+                    </li>
+                    <li class="flex gap-2"><span class="text-fuchsia-400">•</span>Trusted players and Creative/Spectator
+                        are unaffected.
+                    </li>
                 </ul>
             </article>
 
             <!-- Wealth -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-lime-500">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Wealth_Stone.png" alt="Wealth Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Wealth Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Wealth_Stone.png" alt="Wealth Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Wealth Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-lime-500/10 px-2.5 py-1 text-lime-300">Cooldown 40s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 10s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-lime-400">•</span><span class="font-semibold text-slate-300">Always on:</span> Hero of the Village II (cheaper villager trades).</li>
-                    <li class="flex gap-2"><span class="text-lime-400">•</span>Ability: 64 charged emeralds — right-click to charge 1s, then it's thrown for 4 damage (2 hearts).</li>
-                    <li class="flex gap-2"><span class="text-lime-400">•</span>Can't be dropped. Leftovers turn into ordinary emeralds when the ability ends.</li>
+                    <li class="flex gap-2"><span class="text-lime-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> Hero of the Village II (cheaper
+                        villager trades).
+                    </li>
+                    <li class="flex gap-2"><span class="text-lime-400">•</span>Ability: 64 charged emeralds -
+                        right-click to charge 1s, then it's thrown for 4 damage (2 hearts).
+                    </li>
+                    <li class="flex gap-2"><span class="text-lime-400">•</span>Can't be dropped. Leftovers turn into
+                        ordinary emeralds when the ability ends.
+                    </li>
                 </ul>
             </article>
 
             <!-- Blood -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-rose-500">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Blood_Stone.png" alt="Blood Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Blood Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Blood_Stone.png" alt="Blood Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Blood Stone <span
+                        class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">New</span>
+                </h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-rose-500/10 px-2.5 py-1 text-rose-300">Cooldown 65s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 10s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
                     <li class="flex gap-2"><span class="text-rose-400">•</span>Speed II for 6s, Strength II for 3s.</li>
-                    <li class="flex gap-2"><span class="text-rose-400">•</span>For 10s, every hit heals you 2 (1 heart), up to 8 (4 hearts) per use.</li>
+                    <li class="flex gap-2"><span class="text-rose-400">•</span>For 10s, every hit heals you 2 (1 heart),
+                        up to 8 (4 hearts) per use.
+                    </li>
                 </ul>
             </article>
 
             <!-- Air -->
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-sky-400">
-                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Air_Stone.png" alt="Air Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Air Stone</h4>
+                <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                        src="Static/Assets/Images/Stones/Air_Stone.png" alt="Air Stone icon"
+                        class="h-8 w-8 flex-none [image-rendering:pixelated]"> Air Stone<span
+                        class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">New</span>
+                </h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-sky-400/10 px-2.5 py-1 text-sky-300">Cooldown 55s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 5s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-sky-400">•</span>A wind burst hits every enemy within 6 blocks: 6 damage (3 hearts), blown back ~15 blocks.</li>
+                    <li class="flex gap-2"><span class="text-sky-400">•</span>A wind burst hits every enemy within 6
+                        blocks: 6 damage (3 hearts), blown back ~15 blocks.
+                    </li>
                     <li class="flex gap-2"><span class="text-sky-400">•</span>Speed II for 5 seconds.</li>
                 </ul>
             </article>
@@ -397,49 +547,83 @@
                 <span class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">Not Craftable</span>
             </div>
             <p class="mb-6 max-w-2xl text-sm leading-relaxed text-slate-400">
-                These are special. You can't craft them. Staff hand them out at events, and there is no limit on how many exist.
+                These are special. You can't craft them. Staff hand them out at events, and there is no limit on how
+                many exist, but usually only one of each is handed out each season. These are some of the best stones on
+                the server.
             </p>
 
             <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 <!-- Sunstone -->
-                <article class="rounded-2xl border border-amber-400/30 bg-gradient-to-b from-amber-500/10 to-transparent p-6 shadow-lg shadow-amber-500/10 ring-1 ring-amber-400/20">
-                    <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Sunstone.png" alt="Sunstone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Sunstone</h4>
+                <article
+                        class="rounded-2xl border border-amber-400/30 bg-gradient-to-b from-amber-500/10 to-transparent p-6 shadow-lg shadow-amber-500/10 ring-1 ring-amber-400/20">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                            src="Static/Assets/Images/Stones/Sunstone.png" alt="Sunstone icon"
+                            class="h-8 w-8 flex-none [image-rendering:pixelated]"> Sunstone</h4>
                     <div class="mt-3 flex gap-2 text-xs font-medium">
                         <span class="rounded-full bg-amber-400/15 px-2.5 py-1 text-amber-300">Cooldown 65s</span>
                         <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 7s</span>
                     </div>
                     <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
-                        <li class="flex gap-2"><span class="text-amber-400">•</span><span class="font-semibold text-slate-200">Always on:</span> Speed I, plus Strength I during the day.</li>
-                        <li class="flex gap-2"><span class="text-amber-400">•</span>Ability: Resistance III (5s). Enemies within 8 blocks get Poison IV and are set on fire for 7s.</li>
-                        <li class="flex gap-2"><span class="text-amber-400">•</span>You launch ~20 blocks into the air with no fall damage on landing.</li>
+                        <li class="flex gap-2"><span class="text-amber-400">•</span><span
+                                class="font-semibold text-slate-200">Always on:</span> Speed I, plus Strength I during
+                            the day.
+                        </li>
+                        <li class="flex gap-2"><span class="text-amber-400">•</span>Ability: Resistance III (5s).
+                            Enemies within 8 blocks get Poison IV and are set on fire for 7s.
+                        </li>
+                        <li class="flex gap-2"><span class="text-amber-400">•</span>You launch ~20 blocks into the air
+                            with no fall damage on landing.
+                        </li>
                     </ul>
                 </article>
 
                 <!-- Moonstone -->
-                <article class="rounded-2xl border border-indigo-400/30 bg-gradient-to-b from-indigo-500/10 to-transparent p-6 shadow-lg shadow-indigo-500/10 ring-1 ring-indigo-400/20">
-                    <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Moonstone.png" alt="Moonstone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Moonstone</h4>
+                <article
+                        class="rounded-2xl border border-indigo-400/30 bg-gradient-to-b from-indigo-500/10 to-transparent p-6 shadow-lg shadow-indigo-500/10 ring-1 ring-indigo-400/20">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                            src="Static/Assets/Images/Stones/Moonstone.png" alt="Moonstone icon"
+                            class="h-8 w-8 flex-none [image-rendering:pixelated]"> Moonstone</h4>
                     <div class="mt-3 flex gap-2 text-xs font-medium">
                         <span class="rounded-full bg-indigo-400/15 px-2.5 py-1 text-indigo-300">Cooldown 70s</span>
                         <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts ~8.5s</span>
                     </div>
                     <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
-                        <li class="flex gap-2"><span class="text-indigo-400">•</span><span class="font-semibold text-slate-200">Always on:</span> Strength I at night.</li>
-                        <li class="flex gap-2"><span class="text-indigo-400">•</span>Ability: a warden-style beam fires from your eyes up to 32 blocks, ~2 damage every half second to anything in it. Aim by turning your head.</li>
+                        <li class="flex gap-2"><span class="text-indigo-400">•</span><span
+                                class="font-semibold text-slate-200">Always on:</span> Strength I at night.
+                        </li>
+                        <li class="flex gap-2"><span class="text-indigo-400">•</span>Ability: a warden-style beam fires
+                            from your eyes up to 32 blocks, ~2 damage every half second to anything in it. Aim by
+                            turning your head.
+                        </li>
                     </ul>
                 </article>
 
                 <!-- Dragon Stone -->
-                <article class="rounded-2xl border border-teal-400/30 bg-gradient-to-b from-teal-500/10 to-transparent p-6 shadow-lg shadow-teal-500/10 ring-1 ring-teal-400/20">
-                    <h4 class="flex items-center gap-2 text-base font-bold text-white"><img src="Static/Assets/Images/Stones/Dragon_Stone.png" alt="Dragon Stone icon" class="h-8 w-8 flex-none [image-rendering:pixelated]"> Dragon Stone</h4>
+                <article
+                        class="rounded-2xl border border-teal-400/30 bg-gradient-to-b from-teal-500/10 to-transparent p-6 shadow-lg shadow-teal-500/10 ring-1 ring-teal-400/20">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white"><img
+                            src="Static/Assets/Images/Stones/Dragon_Stone.png" alt="Dragon Stone icon"
+                            class="h-8 w-8 flex-none [image-rendering:pixelated]"> Dragon Stone</h4>
                     <div class="mt-3 flex gap-2 text-xs font-medium">
                         <span class="rounded-full bg-teal-400/15 px-2.5 py-1 text-teal-300">Cooldown 60s</span>
                         <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 9s</span>
                     </div>
                     <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
-                        <li class="flex gap-2"><span class="text-teal-400">•</span><span class="font-semibold text-slate-200">Always on:</span> Speed I.</li>
-                        <li class="flex gap-2"><span class="text-teal-400">•</span>Fires 3 dragon fireballs, one every 3s. Each hit does 6 damage (3 hearts) within 3 blocks.</li>
-                        <li class="flex gap-2"><span class="text-teal-400">•</span>Leaves a dragon-breath zone for 30s (grows from 3 to 7 blocks wide), 6 damage/second after the first second.</li>
-                        <li class="flex gap-2"><span class="text-teal-400">•</span>Fireballs and zones never hurt you or trusted players.</li>
+                        <li class="flex gap-2"><span class="text-teal-400">•</span><span
+                                class="font-semibold text-slate-200">Always on:</span> Speed I.
+                        </li>
+                        <li class="flex gap-2"><span class="text-teal-400">•</span>Fires 3 dragon fireballs, one every
+                            3s. Each hit does 6 damage (3 hearts) within 3 blocks.
+                        </li>
+                        <li class="flex gap-2"><span class="text-teal-400">•</span>Leaves a dragon-breath zone for 30s
+                            (grows from 3 to 7 blocks wide), 6 damage/second after the first second.
+                        </li>
+                        <li class="flex gap-2"><span class="text-teal-400">•</span>Fireballs and zones never hurt you or
+                            trusted players.
+                        </li>
+                        <li class="flex gap-2"><span class="text-teal-400">•</span>The player that gets the dragon egg
+                            at the end of the end fight is awarded the Dragon Stone (exact info posted beforehand).
+                        </li>
                     </ul>
                 </article>
             </div>
@@ -450,13 +634,15 @@
     <section id="crafting" class="scroll-mt-24 border-t border-white/5 py-16 sm:py-24">
         <div class="mb-12 max-w-2xl">
             <p class="text-sm font-semibold uppercase tracking-wider text-amber-400">Section 3</p>
-            <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Getting New Stones</h2>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Crafting Stones</h2>
         </div>
 
         <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-            <h3 class="text-lg font-semibold text-white">Crafting — the "trial"</h3>
+            <h3 class="text-lg font-semibold text-white">Stone Trials</h3>
             <p class="mt-3 text-sm leading-relaxed text-slate-400">
-                Every craftable stone has a special recipe. To see it, type <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone recipe</code> (all stones) or <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone recipe &lt;stone&gt;</code>.
+                Every craftable stone has a special recipe. To see it, type <code
+                    class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone recipe</code> (all stones) or <code
+                    class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone recipe &lt;stone&gt;</code>.
             </p>
 
             <ol class="mt-6 space-y-4">
@@ -466,7 +652,8 @@
                 </li>
                 <li class="flex gap-4">
                     <span class="flex h-7 w-7 flex-none items-center justify-center rounded-full bg-amber-500/15 text-sm font-bold text-amber-300">2</span>
-                    <span class="text-sm leading-relaxed text-slate-400">Take the result. This starts a <span class="font-semibold text-slate-200">trial</span>: a floating stone appears above the crafting table.</span>
+                    <span class="text-sm leading-relaxed text-slate-400">Take the result. This starts a <span
+                            class="font-semibold text-slate-200">trial</span>: a floating stone appears above the crafting table. You get this instantly.</span>
                 </li>
                 <li class="flex gap-4">
                     <span class="flex h-7 w-7 flex-none items-center justify-center rounded-full bg-amber-500/15 text-sm font-bold text-amber-300">3</span>
@@ -474,23 +661,30 @@
                 </li>
                 <li class="flex gap-4">
                     <span class="flex h-7 w-7 flex-none items-center justify-center rounded-full bg-amber-500/15 text-sm font-bold text-amber-300">4</span>
-                    <span class="text-sm leading-relaxed text-slate-400"><span class="font-semibold text-slate-200">15 minutes later</span> the stone drops at that spot. The first person to pick it up keeps it. Anyone can go and take it.</span>
+                    <span class="text-sm leading-relaxed text-slate-400"><span class="font-semibold text-slate-200">15 minutes later</span> a duplicate stone drops again at that spot. The first person to pick it up keeps it. Anyone can go and take it.</span>
                 </li>
             </ol>
 
             <p class="mt-6 text-sm leading-relaxed text-slate-400">
-                Because everyone can see where the trial is, expect company. People defend trials and people ambush them.
+                Because everyone can see where the trial is, expect company. People defend trials and people ambush
+                them.
             </p>
             <p class="mt-3 text-sm leading-relaxed text-slate-400">
                 If you get an "unstable stone" item, sneak + right-click with it to start the trial.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                There may be restrictions enforced server-by-server about when and where stones can be crafted (e.g.,
+                within 2000 blocks of spawn or between 1 PM - 5PM). Some servers may choose not to set restrictions
             </p>
         </article>
 
         <article class="mt-6 rounded-2xl border border-amber-500/20 bg-amber-500/[0.05] p-6 sm:p-8">
             <h3 class="flex items-center gap-2 text-lg font-semibold text-white"><span>⚠️</span> Craft limit</h3>
             <p class="mt-3 text-sm leading-relaxed text-slate-300">
-                Each craftable stone can only be crafted <span class="font-semibold text-amber-300">2 times on the whole server, ever</span>. After that, nobody can start another trial for it.
-                <span class="font-semibold text-amber-300">A stone that is lost or destroyed does not give its craft back.</span> So stones are rare, and losing one hurts.
+                Each craftable stone can only be crafted <span class="font-semibold text-amber-300">2 times on the whole server, ever</span>.
+                After that, nobody can start another trial for it.
+                <span class="font-semibold text-amber-300">A stone that is lost or destroyed does not give its craft back.</span>
+                So stones are rare, and losing one hurts.
             </p>
         </article>
 
@@ -500,31 +694,99 @@
             <div class="overflow-x-auto rounded-2xl border border-white/10">
                 <table class="w-full min-w-[640px] text-left text-sm">
                     <thead>
-                        <tr class="border-b border-white/10 bg-white/[0.03] text-xs uppercase tracking-wider text-slate-500">
-                            <th class="px-5 py-3 font-semibold">Stone</th>
-                            <th class="px-5 py-3 font-semibold">What you need</th>
-                        </tr>
+                    <tr class="border-b border-white/10 bg-white/[0.03] text-xs uppercase tracking-wider text-slate-500">
+                        <th class="px-5 py-3 font-semibold">Stone</th>
+                        <th class="px-5 py-3 font-semibold">What you need</th>
+                    </tr>
                     </thead>
                     <tbody class="divide-y divide-white/5">
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">🌿 Plant</td><td class="px-5 py-3 text-slate-400">4 Emerald Blocks, 2 Netherite Ingots, 2 Totems of Undying, 1 Enchanted Golden Apple</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">⚡ Lightning</td><td class="px-5 py-3 text-slate-400">7 Gold Blocks, 1 Lightning Rod, 1 Beacon</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">🌑 Shadow</td><td class="px-5 py-3 text-slate-400">2 End Crystals, 4 Sculk Shriekers, 1 Echo Shard, 2 Skeleton Skulls</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">⚔️ Melee</td><td class="px-5 py-3 text-slate-400">4 Potions of Strength, 2 Enchanted Golden Apples, 2 Golden Apples, 1 Netherite Sword</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">🌊 Water</td><td class="px-5 py-3 text-slate-400">4 Nautilus Shells, 2 Tridents, 2 Ice, 1 Conduit</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">🔥 Fire</td><td class="px-5 py-3 text-slate-400">4 Gilded Blackstone, 2 Potions of Fire Resistance, 2 Netherite Scrap, 1 Fire Charge</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">🪨 Earth</td><td class="px-5 py-3 text-slate-400">5 Grass Blocks, 2 Obsidian, 1 Netherite Block, 1 Rooted Dirt</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">💨 Speed</td><td class="px-5 py-3 text-slate-400">4 Hearts of the Sea, 2 Rabbit Feet, 2 Potions of Swiftness, 1 Piglin Head</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">💖 Health</td><td class="px-5 py-3 text-slate-400">4 Potions of Healing, 2 Totems of Undying, 2 Enchanted Golden Apples, 1 Wither Rose</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">🌀 Escaper</td><td class="px-5 py-3 text-slate-400">2 Ender Pearls, 1 Breeze Rod, 2 Amethyst Clusters, 1 Nether Star</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">⛏️ Miner</td><td class="px-5 py-3 text-slate-400">4 TNT, 4 Deepslate Diamond Ore, 1 Diamond Pickaxe</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">🎭 Mischief</td><td class="px-5 py-3 text-slate-400">6 Sculk, 2 Potions of Weakness, 1 Wither Skeleton Skull</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">💰 Wealth</td><td class="px-5 py-3 text-slate-400">4 Emerald Blocks, 4 Gold Blocks, 1 Nether Star</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">🩸 Blood</td><td class="px-5 py-3 text-slate-400">2 Enchanted Golden Apples, 2 Wither Skeleton Skulls, 2 Spider Eyes, 2 Skeleton Skulls, 1 Netherite Axe</td></tr>
-                        <tr><td class="px-5 py-3 font-medium text-slate-200">🌬️ Air</td><td class="px-5 py-3 text-slate-400">4 Breeze Rods, 2 Golden Apples, 2 Wind Charged Potions, 1 Netherite Spear</td></tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">🌿 Plant</td>
+                        <td class="px-5 py-3 text-slate-400">4 Emerald Blocks, 2 Netherite Ingots, 2 Totems of Undying,
+                            1 Enchanted Golden Apple
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">⚡ Lightning</td>
+                        <td class="px-5 py-3 text-slate-400">7 Gold Blocks, 1 Lightning Rod, 1 Beacon</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">🌑 Shadow</td>
+                        <td class="px-5 py-3 text-slate-400">2 End Crystals, 4 Sculk Shriekers, 1 Echo Shard, 2 Skeleton
+                            Skulls
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">⚔️ Melee</td>
+                        <td class="px-5 py-3 text-slate-400">4 Potions of Strength, 2 Enchanted Golden Apples, 2 Golden
+                            Apples, 1 Netherite Sword
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">🌊 Water</td>
+                        <td class="px-5 py-3 text-slate-400">4 Nautilus Shells, 2 Tridents, 2 Ice, 1 Conduit</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">🔥 Fire</td>
+                        <td class="px-5 py-3 text-slate-400">4 Gilded Blackstone, 2 Potions of Fire Resistance, 2
+                            Netherite Scrap, 1 Fire Charge
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">🪨 Earth</td>
+                        <td class="px-5 py-3 text-slate-400">5 Grass Blocks, 2 Obsidian, 1 Netherite Block, 1 Rooted
+                            Dirt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">💨 Speed</td>
+                        <td class="px-5 py-3 text-slate-400">4 Hearts of the Sea, 2 Rabbit Feet, 2 Potions of Swiftness,
+                            1 Piglin Head
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">💖 Health</td>
+                        <td class="px-5 py-3 text-slate-400">4 Potions of Healing, 2 Totems of Undying, 2 Enchanted
+                            Golden Apples, 1 Wither Rose
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">🌀 Escaper</td>
+                        <td class="px-5 py-3 text-slate-400">2 Ender Pearls, 1 Breeze Rod, 2 Amethyst Clusters, 1 Nether
+                            Star
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">⛏️ Miner</td>
+                        <td class="px-5 py-3 text-slate-400">4 TNT, 4 Deepslate Diamond Ore, 1 Diamond Pickaxe</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">🎭 Mischief</td>
+                        <td class="px-5 py-3 text-slate-400">6 Sculk, 2 Potions of Weakness, 1 Wither Skeleton Skull
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">💰 Wealth</td>
+                        <td class="px-5 py-3 text-slate-400">4 Emerald Blocks, 4 Gold Blocks, 1 Nether Star</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">🩸 Blood</td>
+                        <td class="px-5 py-3 text-slate-400">2 Enchanted Golden Apples, 2 Wither Skeleton Skulls, 2
+                            Spider Eyes, 2 Skeleton Skulls, 1 Netherite Axe
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-3 font-medium text-slate-200">🌬️ Air</td>
+                        <td class="px-5 py-3 text-slate-400">4 Breeze Rods, 2 Golden Apples, 2 Wind Charged Potions, 1
+                            Netherite Spear
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="mt-3 text-xs text-slate-500">The shape matters. Use <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone recipe &lt;stone&gt;</code> to see the exact layout.</p>
+            <p class="mt-3 text-xs text-slate-500">The shape matters. Use <code
+                    class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone recipe &lt;stone&gt;</code> to see
+                the exact layout.</p>
         </div>
     </section>
 
@@ -538,7 +800,8 @@
         <div class="grid gap-6 sm:grid-cols-2">
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                 <code class="rounded bg-slate-800 px-2 py-1 text-sm text-amber-300">/stone trust &lt;player&gt;</code>
-                <p class="mt-3 text-sm leading-relaxed text-slate-400">Your stones will never hurt that player or affect them.</p>
+                <p class="mt-3 text-sm leading-relaxed text-slate-400">Your stones will never hurt that player or affect
+                    them.</p>
             </article>
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                 <code class="rounded bg-slate-800 px-2 py-1 text-sm text-amber-300">/stone untrust &lt;player&gt;</code>
@@ -548,9 +811,11 @@
 
         <article class="mt-6 rounded-2xl border border-amber-500/20 bg-amber-500/[0.05] p-6 sm:p-8">
             <p class="text-sm leading-relaxed text-slate-300">
-                Trust goes <span class="font-semibold text-amber-300">one way</span>. If you trust a friend, your stones spare them, but their stones don't spare you until they trust you back.
+                Trust goes <span class="font-semibold text-amber-300">one way</span>. If you trust a friend, your stones
+                spare them, but their stones don't spare you until they trust you back.
             </p>
-            <p class="mt-3 text-sm leading-relaxed text-slate-400">Your trusted list is saved, so it stays after you log out.</p>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">Your trusted list is saved, so it stays after you log
+                out.</p>
         </article>
     </section>
 
@@ -564,30 +829,93 @@
         <div class="overflow-x-auto rounded-2xl border border-white/10">
             <table class="w-full min-w-[560px] text-left text-sm">
                 <thead>
-                    <tr class="border-b border-white/10 bg-white/[0.03] text-xs uppercase tracking-wider text-slate-500">
-                        <th class="px-5 py-3 font-semibold">Command</th>
-                        <th class="px-5 py-3 font-semibold">What it does</th>
-                    </tr>
+                <tr class="border-b border-white/10 bg-white/[0.03] text-xs uppercase tracking-wider text-slate-500">
+                    <th class="px-5 py-3 font-semibold">Command</th>
+                    <th class="px-5 py-3 font-semibold">What it does</th>
+                </tr>
                 </thead>
                 <tbody class="divide-y divide-white/5">
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone help</code></td><td class="px-5 py-3 text-slate-400">Shows the command list</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone list</code></td><td class="px-5 py-3 text-slate-400">Lists every stone</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone info &lt;stone&gt;</code></td><td class="px-5 py-3 text-slate-400">Shows a stone's cooldown and how many have been crafted</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone recipe [stone]</code></td><td class="px-5 py-3 text-slate-400">Opens the recipe screen</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone cooldowns</code></td><td class="px-5 py-3 text-slate-400">Shows your cooldowns</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use [1|2]</code></td><td class="px-5 py-3 text-slate-400">Uses your first or second stone</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger</code></td><td class="px-5 py-3 text-slate-400">Pick your activation keys</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger reset</code></td><td class="px-5 py-3 text-slate-400">Back to F and Shift+F</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger &lt;1|2&gt; label &lt;text&gt;</code></td><td class="px-5 py-3 text-slate-400">Names the key shown on your action bar (for key-bind mods)</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone unequip</code></td><td class="px-5 py-3 text-slate-400">Take off your stones (then wait 60s to equip again)</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trust &lt;player&gt;</code></td><td class="px-5 py-3 text-slate-400">Your stones won't hurt them</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone untrust &lt;player&gt;</code></td><td class="px-5 py-3 text-slate-400">Undo trust</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone count &lt;player&gt;</code></td><td class="px-5 py-3 text-slate-400">How many stones a player has</td></tr>
-                    <tr><td class="whitespace-nowrap px-5 py-3"><code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone status</code></td><td class="px-5 py-3 text-slate-400">Shows the plugin's status</td></tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone help</code></td>
+                    <td class="px-5 py-3 text-slate-400">Shows the command list</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone list</code></td>
+                    <td class="px-5 py-3 text-slate-400">Lists every stone</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone info &lt;stone&gt;</code>
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Shows a stone's cooldown and how many have been crafted</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone recipe [stone]</code></td>
+                    <td class="px-5 py-3 text-slate-400">Opens the recipe screen</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone cooldowns</code></td>
+                    <td class="px-5 py-3 text-slate-400">Shows your cooldowns</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use [1|2]</code></td>
+                    <td class="px-5 py-3 text-slate-400">Uses your first or second stone</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger [1|2]</code></td>
+                    <td class="px-5 py-3 text-slate-400">Pick your activation keys</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger reset</code></td>
+                    <td class="px-5 py-3 text-slate-400">Back to F and Shift+F</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger &lt;1|2&gt; label
+                        &lt;text&gt;</code></td>
+                    <td class="px-5 py-3 text-slate-400">Names the key shown on your action bar (for key-bind mods)</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone unequip</code></td>
+                    <td class="px-5 py-3 text-slate-400">Take off your stones (then wait 60s to equip again)</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trust &lt;player&gt;</code>
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Your stones won't hurt them</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone untrust
+                        &lt;player&gt;</code></td>
+                    <td class="px-5 py-3 text-slate-400">Undo trust</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone count &lt;player&gt;</code>
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">How many stones a player has</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone status</code></td>
+                    <td class="px-5 py-3 text-slate-400">Shows the plugin's status</td>
+                </tr>
                 </tbody>
             </table>
         </div>
-        <p class="mt-4 text-sm text-slate-500">Staff also have commands to give or remove stones and reset cooldowns.</p>
+        <p class="mt-4 text-sm text-slate-500">Staff also have commands not mentioned here to give or remove stones and
+            reset
+            cooldowns.</p>
     </section>
 
     <!-- 6. Tips -->
@@ -600,31 +928,41 @@
         <div class="grid gap-4 sm:grid-cols-2">
             <div class="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                 <span class="text-xl">💡</span>
-                <p class="text-sm leading-relaxed text-slate-300">Pair stones that work together — a damage stone with an escape stone, or a heal stone with a fighting stone.</p>
+                <p class="text-sm leading-relaxed text-slate-300">Try to have two stones that work well together,
+                    depending on your playstyle. This could be two attacking stones, two defensive ones, or a mix of
+                    both.</p>
             </div>
             <div class="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-                <span class="text-xl">⏱️</span>
-                <p class="text-sm leading-relaxed text-slate-300">Know your cooldown. Your action bar shows it — don't start a fight with your best stone on cooldown.</p>
+                <span class="text-xl">️💻</span>
+                <p class="text-sm leading-relaxed text-slate-300">Change your stone keybinds. Whether you're using your
+                    pick block button or a custom bind through a mod, make sure to actually think about your stone
+                    binds.</p>
             </div>
             <div class="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                 <span class="text-xl">⚡</span>
-                <p class="text-sm leading-relaxed text-slate-300">Lightning rewards patience. A full charge hits much harder than a rushed one.</p>
+                <p class="text-sm leading-relaxed text-slate-300">Lightning rewards patience. A full charge hits much
+                    harder than a rushed one.</p>
             </div>
             <div class="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                 <span class="text-xl">🎯</span>
-                <p class="text-sm leading-relaxed text-slate-300">Fire, Dragon and Moonstone are aimed — look at where you want it to go.</p>
+                <p class="text-sm leading-relaxed text-slate-300">Fire, Dragon and Moonstone are aimed. Make sure to
+                    look at where you want it to go.</p>
             </div>
             <div class="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                 <span class="text-xl">🪨</span>
-                <p class="text-sm leading-relaxed text-slate-300">Earth is a safe room, not a wall. Everything it replaced comes back when it ends.</p>
+                <p class="text-sm leading-relaxed text-slate-300">Earth Stones can be deadly. Make sure to stand in the
+                    middle of the dome to avoid fire and dragon blasts from the outside and to avoid being trapped in
+                    deadly head webs against the wall.</p>
             </div>
             <div class="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                 <span class="text-xl">💀</span>
-                <p class="text-sm leading-relaxed text-slate-300">Don't carry your best stone into danger if you can avoid it — you may lose it for good on death.</p>
+                <p class="text-sm leading-relaxed text-slate-300">Be careful around mobs and lava. If you die with your
+                    stone, you don't get it back, and the crafting limit might not allow you to craft it again.</p>
             </div>
             <div class="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:col-span-2">
                 <span class="text-xl">🤝</span>
-                <p class="text-sm leading-relaxed text-slate-300">Trust your team before you fight. One accidental mistake is not worth it.</p>
+                <p class="text-sm leading-relaxed text-slate-300">Trust your team before you fight so you don't
+                    accidently hurt each other.</p>
             </div>
         </div>
     </section>
@@ -642,8 +980,11 @@
 </footer>
 
 <!-- Back to top button -->
-<button id="back-to-top" aria-label="Back to top" class="fixed bottom-6 right-6 z-40 hidden h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-slate-900/90 text-amber-300 shadow-lg backdrop-blur transition hover:bg-slate-800">
-    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+<button id="back-to-top" aria-label="Back to top"
+        class="fixed bottom-6 right-6 z-40 hidden h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-slate-900/90 text-amber-300 shadow-lg backdrop-blur transition hover:bg-slate-800">
+    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+    </svg>
 </button>
 
 <script src="Static/JS/index.js" defer></script>
