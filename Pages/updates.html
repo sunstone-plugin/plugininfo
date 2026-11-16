@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's New — Sunstone SMP</title>
+    <meta name="description" content="Everything that changed in the Sunstone SMP S3-V12 update, in plain words.">
+    <link rel="icon" type="image/png" href="../Static/Assets/Images/Logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased">
+
+<!-- Sticky nav -->
+<header class="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-slate-950/80 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <a href="../index.html" class="flex items-center gap-2.5 text-sm font-bold tracking-wide text-amber-300">
+            <img src="../Static/Assets/Images/Logo.png" alt="Sunstone SMP logo" class="h-10 w-10 rounded-lg">
+            <span>SUNSTONE SMP</span>
+        </a>
+
+        <nav class="hidden items-center gap-6 text-sm font-medium text-slate-400 md:flex">
+            <a data-nav href="#highlights" class="transition hover:text-amber-300">Highlights</a>
+            <a data-nav href="#new-stones" class="transition hover:text-amber-300">New Stones</a>
+            <a data-nav href="#balance" class="transition hover:text-amber-300">Balance</a>
+            <a data-nav href="#buffs" class="transition hover:text-amber-300">Buffs</a>
+            <a data-nav href="#fixes" class="transition hover:text-amber-300">Fixes</a>
+            <a data-nav href="#admin" class="transition hover:text-amber-300">Admin</a>
+        </nav>
+
+        <button id="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false"
+                class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-lg border border-white/10 text-slate-300 md:hidden">
+            <svg id="icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <svg id="icon-close" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+    </div>
+
+    <nav id="mobile-menu"
+         class="hidden flex-col gap-1 border-t border-white/5 bg-slate-950 px-4 py-3 text-sm font-medium text-slate-300 md:hidden">
+        <a data-nav href="#highlights"
+           class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Highlights</a>
+        <a data-nav href="#new-stones"
+           class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">New Stones</a>
+        <a data-nav href="#balance"
+           class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Balance</a>
+        <a data-nav href="#buffs"
+           class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Buffs</a>
+        <a data-nav href="#fixes"
+           class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Fixes</a>
+        <a data-nav href="#admin"
+           class="rounded-lg px-3 py-2 transition hover:bg-white/5 hover:text-amber-300">Admin</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28" id="top">
+    <div class="pointer-events-none absolute inset-0 -z-10">
+        <div class="absolute left-1/2 top-[-10rem] h-[32rem] w-[32rem] -translate-x-1/2 rounded-full bg-amber-500/20 blur-[120px]"></div>
+        <div class="absolute right-0 top-40 h-72 w-72 rounded-full bg-orange-600/10 blur-[100px]"></div>
+    </div>
+
+    <div class="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+        <span class="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-amber-300">
+            Update S3-V12
+        </span>
+        <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
+            What's New
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-400">
+            Only what changed, written for the website. Admin commands are their own section at the bottom.
+        </p>
+
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
+            <a href="#highlights"
+               class="rounded-xl bg-amber-500 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:bg-amber-400">
+                See what changed
+            </a>
+            <a href="../index.html"
+               class="rounded-xl border border-white/10 px-6 py-3 text-sm font-semibold text-slate-300 transition hover:bg-white/5">
+                ← Back to the Guide
+            </a>
+        </div>
+    </div>
+</section>
+
+<main class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+    <!-- Highlights -->
+    <section id="highlights" class="scroll-mt-24 border-t border-white/5 py-16 sm:py-24">
+        <div class="mb-12 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-wider text-amber-400">Overview</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Highlights</h2>
+        </div>
+
+        <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+            <ul class="space-y-3 text-sm leading-relaxed text-slate-300">
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span>
+                    <span>New stones: the <strong class="text-white">Undead Stone</strong> and <strong
+                            class="text-white">Alchemist Stone</strong>, plus three starter stones (<strong
+                            class="text-white">Farmer</strong>, <strong class="text-white">Spider</strong>, <strong
+                            class="text-white">Fish</strong>) that new players pick from a menu the first time they join.</span>
+                </li>
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span>
+                    <span>Every stone got a balance pass, new always-on passives, and a new animation while its ability runs.</span>
+                </li>
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span>
+                    <span>Buffs work differently: speed, strength, regeneration and more are no longer potion effects, so milk can't clear them.</span>
+                </li>
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span>
+                    <span>Shift + right-click no longer activates a stone. Use your stone key (<code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trigger</code>) or <code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use</code>.</span>
+                </li>
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span>
+                    <span>Fixes: the Escaper's teleport works again, the Water Stone no longer leaves you stuck, and the Air Stone now shows up in <code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone recipe</code>.</span>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- New Stones -->
+    <section id="new-stones" class="scroll-mt-24 border-t border-white/5 py-16 sm:py-24">
+        <div class="mb-12 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-wider text-amber-400">New</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">New Stones</h2>
+        </div>
+
+        <h3 class="mb-6 text-xl font-bold text-white">Event Stones</h3>
+        <div class="grid gap-5 sm:grid-cols-2">
+            <!-- Undead Stone -->
+            <article class="rounded-2xl border border-green-400/30 bg-gradient-to-b from-green-500/10 to-transparent p-6 shadow-lg shadow-green-500/10 ring-1 ring-green-400/20">
+                <h4 class="flex items-center gap-2 text-base font-bold text-white">
+                    <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-green-500/15 text-lg">💀</span>
+                    Undead Stone
+                </h4>
+                <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
+                    <li class="flex gap-2"><span class="text-green-400">•</span><span
+                            class="font-semibold text-slate-200">Always on:</span> hostile monsters don't attack you
+                        unless you hurt them first. The Ender Dragon and the Warden still attack.
+                    </li>
+                    <li class="flex gap-2"><span class="text-green-400">•</span>Ability (85s cooldown): summons 2
+                        zombies, 1 stray and 1 drowned that rise out of the ground in a triangle around you. The stray
+                        and the drowned wear full Protection IV diamond armor.
+                    </li>
+                    <li class="flex gap-2"><span class="text-green-400">•</span>They only attack players who aren't
+                        trusted, never you or your trusted friends, drop nothing when killed, can be killed by
+                        enemies, and disappear after 15 seconds.
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Alchemist Stone -->
+            <article class="rounded-2xl border border-fuchsia-400/30 bg-gradient-to-b from-fuchsia-500/10 to-transparent p-6 shadow-lg shadow-fuchsia-500/10 ring-1 ring-fuchsia-400/20">
+                <h4 class="flex items-center gap-2 text-base font-bold text-white">
+                    <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-fuchsia-500/15 text-lg">🧪</span>
+                    Alchemist Stone
+                </h4>
+                <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
+                    <li class="flex gap-2"><span class="text-fuchsia-400">•</span><span
+                            class="font-semibold text-slate-200">Always on:</span> positive potion effects you receive
+                        last 50% longer (speed, strength, invisibility, fire resistance and more).
+                    </li>
+                    <li class="flex gap-2"><span class="text-fuchsia-400">•</span>Ability (90s cooldown): for 7
+                        seconds you deal 5% more damage for each potion effect you have, up to +25%. Potion-coloured
+                        particles surge out of you.
+                    </li>
+                </ul>
+            </article>
+        </div>
+
+        <p class="mt-6 max-w-2xl text-sm leading-relaxed text-slate-500">
+            Like other event stones, you can't craft these yet — see the note on crafting below.
+        </p>
+
+        <h3 class="mb-6 mt-14 text-xl font-bold text-white">Starter Stones</h3>
+        <p class="mb-6 max-w-2xl text-sm leading-relaxed text-slate-400">
+            New players get a menu on their first login and pick one of the three below. They have no ability, only
+            passives, can't be crafted, and an equipped starter stone is never lost when you die. The old "random
+            stone when you first join" is gone, replaced by this menu.
+        </p>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Farmer -->
+            <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-lime-500">
+                <div class="flex items-center justify-between">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white">
+                        <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-lime-500/15 text-lg">🌾</span>
+                        Farmer Stone
+                    </h4>
+                    <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs font-semibold text-slate-400">Starter</span>
+                </div>
+                <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                    <li class="flex gap-2"><span class="text-lime-400">•</span>+15% saturation from all food except
+                        golden and enchanted golden apples.
+                    </li>
+                    <li class="flex gap-2"><span class="text-lime-400">•</span>+5% speed on dirt, grass, coarse dirt,
+                        podzol, rooted dirt, mud, farmland, dirt paths, moss and mycelium.
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Spider -->
+            <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-violet-500">
+                <div class="flex items-center justify-between">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white">
+                        <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-violet-500/15 text-lg">🕷️</span>
+                        Spider Stone
+                    </h4>
+                    <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs font-semibold text-slate-400">Starter</span>
+                </div>
+                <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                    <li class="flex gap-2"><span class="text-violet-400">•</span>Cobwebs slow you down less.</li>
+                    <li class="flex gap-2"><span class="text-violet-400">•</span>You take 7.5% less fall damage.</li>
+                </ul>
+            </article>
+
+            <!-- Fish -->
+            <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-cyan-500">
+                <div class="flex items-center justify-between">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white">
+                        <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-cyan-500/15 text-lg">🐟</span>
+                        Fish Stone
+                    </h4>
+                    <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs font-semibold text-slate-400">Starter</span>
+                </div>
+                <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                    <li class="flex gap-2"><span class="text-cyan-400">•</span>You swim 10% faster.</li>
+                    <li class="flex gap-2"><span class="text-cyan-400">•</span>+3% damage while standing in water.
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- Balance changes -->
+    <section id="balance" class="scroll-mt-24 border-t border-white/5 py-16 sm:py-24">
+        <div class="mb-12 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-wider text-amber-400">Numbers</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Balance Changes</h2>
+            <p class="mt-4 text-sm leading-relaxed text-slate-400">
+                These changed on every server. They're applied once — even if the server owner had changed them
+                before — and after that you can set your own values again.
+            </p>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-white/10">
+            <table class="w-full min-w-[640px] text-left text-sm">
+                <thead>
+                <tr class="border-b border-white/10 bg-white/[0.03] text-xs uppercase tracking-wider text-slate-500">
+                    <th class="px-5 py-3 font-semibold">Stone</th>
+                    <th class="px-5 py-3 font-semibold">What changed</th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Plant_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Plant
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Lasts 9s (was 15), healing is 0.4 health per second, 1 heart
+                        every 5s (was 0.8, 1 heart every 2.5s), leaves reach 18 blocks (was 24)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Lightning_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Lightning
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Cooldown 65s (was 70), critical hit damage 1.7 (was 1.6)</td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Melee_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Melee
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Lasts 8s. Instead of Strength II (+6 damage on each hit),
+                        everything you hit does 30% more damage
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Water_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Water
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Wave lasts 3.5s (was 5). The wave is now normal damage
+                        (armor reduces it). After the wave you do 15% more damage for 4s instead of Strength II (+6
+                        damage on each hit)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Fire_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Fire
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Cooldown 60s (was 55), explosion 4.5 hearts (was 4), radius 4
+                        blocks (was 4.5)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Blood_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Blood
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Cooldown 60s (was 65), lasts 7.5s (was 10), +20% speed (was
+                        Speed II, +40%), +10% damage for 6.5s (was Strength II, +6 damage on each hit), heals up to 5
+                        hearts per use (was 4)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Moonstone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Moonstone
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Cooldown 60s (was 70), lasts 8s, range 24 blocks (was 32), a
+                        hit every 0.45s
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Shadow_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Shadow
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Lasts 7s (was 10) and now gives full invisibility: mobs lose
+                        track of you too
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Earth_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Earth
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Lasts 7s (was 15), dome is 8 blocks across (was 11) with
+                        small holes in the roof. The 40% damage reduction is replaced by +15% speed for 10s
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Speed_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Speed
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Cooldown 27.5s (was 35)</td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Health_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Health
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Lasts 8s, 10 absorbing hearts instead of +6 hearts of extra
+                        max health (Health Boost III), 40% less damage taken for 5s (was 10s), always-on bonus is +4
+                        max health (was +5)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Wealth_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Wealth
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Only 3 charged emeralds (was 64)</td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Air_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Air
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">The burst does 1 heart of normal damage (was 3 hearts), +20%
+                        speed for 5s (was Speed II, +40%)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Escaper_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Escaper
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Freeze lasts 3s (was 2.75). The teleport works again</td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Mischief_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Mischief
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Lasts 8s (was 15). Darkness replaces Blindness</td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Miner_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Miner
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Cooldown 40s (was 50). The ability also gives +75% mining
+                        speed
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Sunstone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Sunstone
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">Lasts 6s (was 7), always-on speed is +10% (was +20%). 60%
+                        less damage taken for 6s. Poison is replaced by a 10-block burning zone that moves with you:
+                        1.5 hearts every 1.25s and enemies are set on fire
+                    </td>
+                </tr>
+                <tr>
+                    <td class="flex items-center gap-2 whitespace-nowrap px-5 py-3 font-medium text-slate-200">
+                        <img src="../Static/Assets/Images/Stones/Dragon_Stone.png" alt="" class="h-5 w-5 [image-rendering:pixelated]">
+                        Dragon
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">One fireball every 2s (was 3), 2.5 hearts per fireball (was
+                        3), 2 block impact radius (was 3)
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Passives -->
+        <h3 class="mb-4 mt-12 text-lg font-semibold text-white">New Always-On Passives</h3>
+        <div class="overflow-x-auto rounded-2xl border border-white/10">
+            <table class="w-full min-w-[420px] text-left text-sm">
+                <thead>
+                <tr class="border-b border-white/10 bg-white/[0.03] text-xs uppercase tracking-wider text-slate-500">
+                    <th class="px-5 py-3 font-semibold">Stone</th>
+                    <th class="px-5 py-3 font-semibold">Passive</th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Plant</td>
+                    <td class="px-5 py-3 text-slate-400">Sneak speed doubled</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Lightning</td>
+                    <td class="px-5 py-3 text-slate-400">+3% attack speed</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Melee</td>
+                    <td class="px-5 py-3 text-slate-400">+1 armor toughness</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Water</td>
+                    <td class="px-5 py-3 text-slate-400">Less slowdown in water</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Fire</td>
+                    <td class="px-5 py-3 text-slate-400">Immune to fire and lava (milk can't remove it)</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Shadow</td>
+                    <td class="px-5 py-3 text-slate-400">Less slowdown from soul sand and cobwebs</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Earth</td>
+                    <td class="px-5 py-3 text-slate-400">+7% knockback resistance</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Speed</td>
+                    <td class="px-5 py-3 text-slate-400">+10% movement speed</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Escaper</td>
+                    <td class="px-5 py-3 text-slate-400">Reach 3.2 blocks (was 3)</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Mischief</td>
+                    <td class="px-5 py-3 text-slate-400">Block reach 5.5 blocks (was 4.5)</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Air</td>
+                    <td class="px-5 py-3 text-slate-400">Moves more easily through the air</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Dragon</td>
+                    <td class="px-5 py-3 text-slate-400">+10% damage</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Animations -->
+        <article class="mt-10 rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+            <h3 class="text-lg font-semibold text-white">New: Ability Animations</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                Every stone now plays a visual effect while its ability runs: moss and sculk floors, an obsidian dome
+                with flying blocks, a water bubble, orbiting netherrack and emerald blocks, harmless lightning, a
+                floating sun and dragon, puppets above you, and more.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                Server owners can switch all animations off with one setting.
+            </p>
+        </article>
+    </section>
+
+    <!-- Buffs overhaul -->
+    <section id="buffs" class="scroll-mt-24 border-t border-white/5 py-16 sm:py-24">
+        <div class="mb-12 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-wider text-amber-400">Under the hood</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Buffs Are No Longer Potion
+                Effects</h2>
+            <p class="mt-4 text-sm leading-relaxed text-slate-400">
+                Speed, strength, damage boosts, resistance, regeneration, mining speed and extra hearts are now built
+                into the stones as percentages and plain numbers, instead of potion levels. That means milk can't
+                clear them and they never wipe a potion you already had. They show no potion icon: the action bar now
+                shows <span class="text-slate-300">Active (5s)</span> with the time left.
+            </p>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-white/10">
+            <table class="w-full min-w-[640px] text-left text-sm">
+                <thead>
+                <tr class="border-b border-white/10 bg-white/[0.03] text-xs uppercase tracking-wider text-slate-500">
+                    <th class="px-5 py-3 font-semibold">The old potion level</th>
+                    <th class="px-5 py-3 font-semibold">What it is now</th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Speed II / Speed III</td>
+                    <td class="px-5 py-3 text-slate-400">+40% / +60% movement speed</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Strength I / Strength II</td>
+                    <td class="px-5 py-3 text-slate-400">+3 / +6 damage on each hit (Melee, Water and Blood now use a
+                        damage multiplier such as x1.3 instead)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Resistance II / Resistance III
+                    </td>
+                    <td class="px-5 py-3 text-slate-400">40% / 60% less damage taken</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Regeneration I / II / III</td>
+                    <td class="px-5 py-3 text-slate-400">0.4 / 0.8 / 1.67 health per second</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Haste I</td>
+                    <td class="px-5 py-3 text-slate-400">+20% mining speed</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3 font-medium text-slate-200">Health Boost III</td>
+                    <td class="px-5 py-3 text-slate-400">+12 max health (the Health Stone now gives 10 absorption
+                        hearts instead)
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="mt-4 text-sm leading-relaxed text-slate-500">
+            When the same kind of buff stacks (for example Dragon's x1.1 damage with Melee's x1.3), the extra from
+            stacking is reduced by 35%, so x1.3 and x1.1 give x1.3845, not x1.43. Resistance, regeneration and mining
+            speed don't stack: only the strongest applies.
+        </p>
+    </section>
+
+    <!-- Crafting -->
+    <section class="border-t border-white/5 py-16 sm:py-24">
+        <div class="mb-8 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-wider text-amber-400">Crafting</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Crafting</h2>
+        </div>
+        <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+            <ul class="space-y-3 text-sm leading-relaxed text-slate-300">
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span>Any variation of a recipe
+                    potion works now: long, strong (level II), splash and lingering.
+                </li>
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span>The Air Stone now appears in
+                    <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone recipe</code>.
+                </li>
+            </ul>
+            <p class="mt-4 text-xs text-slate-500">
+                Recipes for the Undead and Alchemist Stones are coming in a later update.
+            </p>
+        </article>
+    </section>
+
+    <!-- Fixes -->
+    <section id="fixes" class="scroll-mt-24 border-t border-white/5 py-16 sm:py-24">
+        <div class="mb-8 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-wider text-amber-400">Cleanup</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Fixes</h2>
+        </div>
+        <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+            <ul class="space-y-3 text-sm leading-relaxed text-slate-300">
+                <li class="flex gap-3"><span class="flex-none text-emerald-400">•</span><span
+                        class="font-semibold text-slate-200">Escaper Stone:</span> the teleport did nothing unless
+                    you were looking exactly level. It now works whichever way you look.
+                </li>
+                <li class="flex gap-3"><span class="flex-none text-emerald-400">•</span><span
+                        class="font-semibold text-slate-200">Water Stone:</span> the wave no longer leaves you stuck
+                    against a wall or the floor.
+                </li>
+                <li class="flex gap-3"><span class="flex-none text-emerald-400">•</span>Shift + right-click no longer
+                    activates a stone. Stone items also no longer say "Shift + Right Click to activate".
+                </li>
+            </ul>
+        </article>
+
+        <article class="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+            <h3 class="text-lg font-semibold text-white">New Look</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                The Undead Stone (a glowing-eyed skull) and the Alchemist Stone (a bubbling potion flask) are getting
+                new item and action-bar icons, in the same style as the other stones — artwork is on the way, so this
+                page uses placeholder icons for now. The Farmer, Spider and Fish starter stones also use placeholder
+                icons until their final art is ready.
+            </p>
+        </article>
+    </section>
+
+    <!-- Admin / Staff -->
+    <section id="admin" class="scroll-mt-24 border-t-2 border-t-amber-500/40 border-x-0 border-b-0 border-white/5 py-16 sm:py-24">
+        <div class="mb-12 flex max-w-2xl flex-wrap items-center gap-3">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">🛠️ Admin / Staff Commands</h2>
+            <span class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">Staff Only</span>
+        </div>
+        <p class="mb-10 max-w-2xl text-sm leading-relaxed text-slate-400">Only server operators can use these.</p>
+
+        <h3 class="mb-4 text-lg font-semibold text-white">New in This Update</h3>
+        <div class="overflow-x-auto rounded-2xl border border-white/10">
+            <table class="w-full min-w-[640px] text-left text-sm">
+                <thead>
+                <tr class="border-b border-white/10 bg-white/[0.03] text-xs uppercase tracking-wider text-slate-500">
+                    <th class="px-5 py-3 font-semibold">Command</th>
+                    <th class="px-5 py-3 font-semibold">What it does</th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone craft enable
+                        &lt;stone|all&gt;</code></td>
+                    <td class="px-5 py-3 text-slate-400">Allows a stone (or every stone that has a recipe) to be
+                        crafted. Enabling an event stone that has a recipe (Undead, Alchemist) makes it craftable.
+                        Stones with no recipe can't be enabled and a warning is shown.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone craft disable
+                        &lt;stone|all&gt;</code></td>
+                    <td class="px-5 py-3 text-slate-400">Stops a stone (or all of them) from being crafted, for
+                        example while you run trials. Saved across restarts.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone trial
+                        &lt;random|stone&gt;</code></td>
+                    <td class="px-5 py-3 text-slate-400">Starts a stone trial at your position for a specific stone,
+                        or a random one. Works for event stones. Uses no ingredients and does not count toward the
+                        2-crafts-per-stone limit.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mt-4 text-sm leading-relaxed text-slate-500">
+            Also new for staff: OPs in Creative mode skip the 60-second unequip/re-equip wait. In Survival the wait
+            still applies.
+        </p>
+
+        <h3 class="mb-4 mt-12 text-lg font-semibold text-white">All Other Staff Commands</h3>
+        <div class="overflow-x-auto rounded-2xl border border-white/10">
+            <table class="w-full min-w-[560px] text-left text-sm">
+                <thead>
+                <tr class="border-b border-white/10 bg-white/[0.03] text-xs uppercase tracking-wider text-slate-500">
+                    <th class="px-5 py-3 font-semibold">Command</th>
+                    <th class="px-5 py-3 font-semibold">What it does</th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone give &lt;player&gt;
+                        &lt;stone&gt; [amount]</code></td>
+                    <td class="px-5 py-3 text-slate-400">Give a stone to a player</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone giveall &lt;stone&gt;
+                        [amount]</code></td>
+                    <td class="px-5 py-3 text-slate-400">Give a stone to everyone online</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone random
+                        &lt;player&gt;</code></td>
+                    <td class="px-5 py-3 text-slate-400">Give a player a random stone</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone remove &lt;player&gt;
+                        &lt;stone|all&gt;</code></td>
+                    <td class="px-5 py-3 text-slate-400">Remove a stone from a player</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone clear
+                        &lt;player&gt;</code></td>
+                    <td class="px-5 py-3 text-slate-400">Remove every stone from a player</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone cooldown &lt;player&gt;
+                        &lt;stone|all&gt; reset</code></td>
+                    <td class="px-5 py-3 text-slate-400">Reset a player's cooldowns</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone reload</code></td>
+                    <td class="px-5 py-3 text-slate-400">Reload stone-settings.yml without a restart</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone debug item</code></td>
+                    <td class="px-5 py-3 text-slate-400">Show debug info for the item in your hand</td>
+                </tr>
+                <tr>
+                    <td class="whitespace-nowrap px-5 py-3"><code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone debug player
+                        &lt;player&gt;</code></td>
+                    <td class="px-5 py-3 text-slate-400">Show debug info for a player</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <article class="mt-10 rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+            <h3 class="text-lg font-semibold text-white">For Server Owners</h3>
+            <ul class="mt-4 space-y-3 text-sm leading-relaxed text-slate-400">
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span>The new balance numbers are
+                    applied once on the first start, and your previous file is saved as <code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">stone-settings.yml.pre-override.bak</code>.
+                    After that you can change any value and it won't be overwritten. New settings are added
+                    automatically.
+                </li>
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span><code
+                        class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">general.animations-enabled</code>
+                    turns all animations off, and <code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">general.buff-stacking-penalty-percent</code>
+                    sets the stacking penalty (35).
+                </li>
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span>Old potion-style settings (for
+                    example <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">speed-amplifier</code>)
+                    are converted to the new settings automatically, keeping your own values.
+                </li>
+                <li class="flex gap-3"><span class="flex-none text-amber-400">•</span>Recipe changes (potion
+                    variations, <code class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone craft</code>)
+                    need a server restart, not <code
+                            class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone reload</code>.
+                </li>
+            </ul>
+        </article>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="border-t border-white/5 py-10">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 text-sm text-slate-500 sm:flex-row sm:px-6 lg:px-8">
+        <p class="flex items-center gap-2">
+            <img src="../Static/Assets/Images/Logo.png" alt="Sunstone SMP logo" class="h-7 w-7 rounded-md">
+            <span>Sunstone SMP — What's New (S3-V12)</span>
+        </p>
+        <a href="#top" class="text-slate-400 transition hover:text-amber-300">Back to top ↑</a>
+    </div>
+</footer>
+
+<!-- Back to top button -->
+<button id="back-to-top" aria-label="Back to top"
+        class="fixed bottom-6 right-6 z-40 hidden h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-slate-900/90 text-amber-300 shadow-lg backdrop-blur transition hover:bg-slate-800">
+    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+    </svg>
+</button>
+
+<script src="../Static/JS/index.js" defer></script>
+</body>
+</html>
