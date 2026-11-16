@@ -88,7 +88,7 @@ if (recipePicker && recipeImage) {
     let activeIndex = 0;
 
     const tabClasses = (recipe, isActive) =>
-        `recipe-tab inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
+        `recipe-tab inline-flex cursor-pointer items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
             isActive
                 ? `border-${recipe.color}-400/50 bg-${recipe.color}-500/10 text-${recipe.color}-200`
                 : 'border-white/10 bg-white/[0.03] text-slate-400 hover:bg-white/10'
