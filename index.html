@@ -120,11 +120,11 @@
             </article>
 
             <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-                <h3 class="text-lg font-semibold text-white">Spawn Stones</h3>
+                <h3 class="text-lg font-semibold text-white">Starter Stones</h3>
                 <p class="mt-3 text-sm leading-relaxed text-slate-400">
-                    The first time you join the server you get <span class="font-semibold text-slate-200">one random stone</span>
-                    to start with. You only get this once, and it is never a Sunstone, Moonstone or Dragon Stone (these
-                    are event stones).
+                    The first time you join the server you get a menu and pick <span
+                        class="font-semibold text-slate-200">one starter stone</span> to begin with: Farmer, Spider or
+                    Fish. You only get this once.
                 </p>
             </article>
 
@@ -157,8 +157,6 @@
                         class="font-semibold text-slate-200">Stone 2</span> is Sneak + Offhand. This can be changed with <a
                         href="#commands" class="font-medium text-fg-brand underline">commands</a></span>
                 </li>
-                <!--li class="flex gap-2"><span class="text-amber-400">•</span><span>Sneak + right-click with the stone in your hand, or with an empty hand (uses your first stone).</span>
-                </li-->
                 <li class="flex gap-2"><span class="text-amber-400">•</span><span>Type <code
                         class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use</code> (stone 1) or <code
                         class="rounded bg-slate-800 px-1.5 py-0.5 text-amber-300">/stone use 2</code> (stone 2). These commands exist so you can use a mod like <a
@@ -243,6 +241,11 @@
                 is how long the effects of that ability are active. <span class="font-semibold text-slate-200">Passive abilities</span>
                 are always active as long as you have the stone equipped.
             </p>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                Buffs like speed, strength, resistance and regeneration are built into each stone as plain
+                percentages and numbers, not potion effects — milk can't clear them, and they never show a potion
+                icon. Every ability also plays a short visual effect while it runs.
+            </p>
         </div>
 
         <h3 class="mb-6 text-xl font-bold text-white">Craftable Stones</h3>
@@ -257,13 +260,18 @@
                 </div>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-emerald-500/10 px-2.5 py-1 text-emerald-300">Cooldown 60s</span>
-                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 15s</span>
+                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 9s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                    <li class="flex gap-2"><span class="text-emerald-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> Sneak speed doubled.
+                    </li>
                     <li class="flex gap-2"><span class="text-emerald-400">•</span>Fills your hunger bar to full.</li>
-                    <li class="flex gap-2"><span class="text-emerald-400">•</span>Gives Regeneration II for 15s.</li>
+                    <li class="flex gap-2"><span class="text-emerald-400">•</span>Heals 0.4 health per second (1 heart
+                        every 5s) for 9s.
+                    </li>
                     <li class="flex gap-2"><span class="text-emerald-400">•</span>Throws leaves at the nearest enemy
-                        within 24 blocks, ~every 1.2s, 2 damage each.
+                        within 18 blocks, ~every 1.2s, 2 damage each.
                     </li>
                     <li class="flex gap-2"><span class="text-emerald-400">•</span>Last leaf heals you 4 (2 hearts) if it
                         hits.
@@ -277,10 +285,13 @@
                         src="Static/Assets/Images/Stones/Lightning_Stone.png" alt="Lightning Stone icon"
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Lightning Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
-                    <span class="rounded-full bg-yellow-400/10 px-2.5 py-1 text-yellow-300">Cooldown 70s</span>
+                    <span class="rounded-full bg-yellow-400/10 px-2.5 py-1 text-yellow-300">Cooldown 65s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts up to 15s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                    <li class="flex gap-2"><span class="text-yellow-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> +3% attack speed.
+                    </li>
                     <li class="flex gap-2"><span class="text-yellow-400">•</span>A charge bar fills for 6.5s — your next
                         hit is the "empowered" strike.
                     </li>
@@ -288,7 +299,7 @@
                         depending on charge, strikes lightning.
                     </li>
                     <li class="flex gap-2"><span class="text-yellow-400">•</span>Next 5s: each crit (hit while falling)
-                        does +1.6 damage.
+                        does +1.7 damage.
                     </li>
                     <li class="flex gap-2"><span class="text-yellow-400">•</span>No hit within 10s and the surge fades.
                     </li>
@@ -303,13 +314,17 @@
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Shadow Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-purple-500/10 px-2.5 py-1 text-purple-300">Cooldown 60s</span>
-                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 10s</span>
+                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 7s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-purple-400">•</span>You turn invisible — others can't see
-                        you at all, even in armor.
+                    <li class="flex gap-2"><span class="text-purple-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> Less slowdown from soul sand and
+                        cobwebs.
                     </li>
-                    <li class="flex gap-2"><span class="text-purple-400">•</span>Speed III.</li>
+                    <li class="flex gap-2"><span class="text-purple-400">•</span>Full invisibility — mobs lose track of
+                        you too, and others can't see you at all, even in armor.
+                    </li>
+                    <li class="flex gap-2"><span class="text-purple-400">•</span>+60% speed.</li>
                 </ul>
             </article>
 
@@ -320,11 +335,14 @@
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Melee Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-red-500/10 px-2.5 py-1 text-red-300">Cooldown 50s</span>
-                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 7s</span>
+                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 8s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-red-400">•</span>Strength II for 7 seconds. Simple and
-                        strong for close fights.
+                    <li class="flex gap-2"><span class="text-red-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> +1 armor toughness.
+                    </li>
+                    <li class="flex gap-2"><span class="text-red-400">•</span>Everything you hit does 30% more damage
+                        for 8 seconds. Simple and strong for close fights.
                     </li>
                 </ul>
             </article>
@@ -336,16 +354,19 @@
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Water Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-blue-500/10 px-2.5 py-1 text-blue-300">Cooldown 55s</span>
-                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 15s</span>
+                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 3.5s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                    <li class="flex gap-2"><span class="text-blue-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> Less slowdown in water.
+                    </li>
                     <li class="flex gap-2"><span class="text-blue-400">•</span>A wave carries you forward (the way you
-                        look) for ~5s.
+                        look) for ~3.5s.
                     </li>
-                    <li class="flex gap-2"><span class="text-blue-400">•</span>Enemies touched take ~2 damage every half
-                        second, pushed back and up.
+                    <li class="flex gap-2"><span class="text-blue-400">•</span>Enemies touched take ~2 normal damage
+                        (armor reduces it) every half second, pushed back and up.
                     </li>
-                    <li class="flex gap-2"><span class="text-blue-400">•</span>Wave ends → Strength II for 3.5s.</li>
+                    <li class="flex gap-2"><span class="text-blue-400">•</span>Wave ends → +15% damage for 4s.</li>
                 </ul>
             </article>
 
@@ -355,14 +376,18 @@
                         src="Static/Assets/Images/Stones/Fire_Stone.png" alt="Fire Stone icon"
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Fire Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
-                    <span class="rounded-full bg-orange-500/10 px-2.5 py-1 text-orange-300">Cooldown 55s</span>
+                    <span class="rounded-full bg-orange-500/10 px-2.5 py-1 text-orange-300">Cooldown 60s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 8s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                    <li class="flex gap-2"><span class="text-orange-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> Immune to fire and lava (milk can't
+                        remove it).
+                    </li>
                     <li class="flex gap-2"><span class="text-orange-400">•</span>A fireball charges over your head for
                         5s, then flies where you look.
                     </li>
-                    <li class="flex gap-2"><span class="text-orange-400">•</span>Impact: 4.5 block radius, 8 damage (4
+                    <li class="flex gap-2"><span class="text-orange-400">•</span>Impact: 4 block radius, 9 damage (4.5
                         hearts), sets enemies on fire for 5s.
                     </li>
                     <li class="flex gap-2"><span class="text-orange-400">•</span>Doesn't break blocks or start ground
@@ -378,12 +403,15 @@
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Earth Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-stone-400/10 px-2.5 py-1 text-stone-300">Cooldown 50s</span>
-                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 15s</span>
+                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 7s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-stone-400">•</span>Resistance II for 15s.</li>
-                    <li class="flex gap-2"><span class="text-stone-400">•</span>An obsidian dome, ~11 blocks across,
-                        grows around you.
+                    <li class="flex gap-2"><span class="text-stone-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> +7% knockback resistance.
+                    </li>
+                    <li class="flex gap-2"><span class="text-stone-400">•</span>+15% speed for 10s.</li>
+                    <li class="flex gap-2"><span class="text-stone-400">•</span>An obsidian dome, ~8 blocks across with
+                        small holes in the roof, grows around you.
                     </li>
                     <li class="flex gap-2"><span class="text-stone-400">•</span>Replaces almost anything it touches (not
                         obsidian, bedrock or chests) with obsidian to complete the dome, and everything is put back when
@@ -398,14 +426,17 @@
                         src="Static/Assets/Images/Stones/Speed_Stone.png" alt="Speed Stone icon"
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Speed Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
-                    <span class="rounded-full bg-cyan-400/10 px-2.5 py-1 text-cyan-300">Cooldown 35s</span>
+                    <span class="rounded-full bg-cyan-400/10 px-2.5 py-1 text-cyan-300">Cooldown 27.5s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 8s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                    <li class="flex gap-2"><span class="text-cyan-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> +10% movement speed.
+                    </li>
                     <li class="flex gap-2"><span class="text-cyan-400">•</span>Dash forward where you look (no fall
                         damage from the dash).
                     </li>
-                    <li class="flex gap-2"><span class="text-cyan-400">•</span>Speed III for 8 seconds.</li>
+                    <li class="flex gap-2"><span class="text-cyan-400">•</span>+60% speed for 8 seconds.</li>
                 </ul>
             </article>
 
@@ -416,15 +447,15 @@
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Health Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-pink-500/10 px-2.5 py-1 text-pink-300">Cooldown 90s</span>
-                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 10s</span>
+                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 8s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
                     <li class="flex gap-2"><span class="text-pink-400">•</span><span
-                            class="font-semibold text-slate-300">Always on:</span> +5 max health (2.5 hearts) while
+                            class="font-semibold text-slate-300">Always on:</span> +4 max health (2 hearts) while
                         equipped.
                     </li>
-                    <li class="flex gap-2"><span class="text-pink-400">•</span>Ability: Regeneration III (5s), Health
-                        Boost III (10s), Resistance II (10s).
+                    <li class="flex gap-2"><span class="text-pink-400">•</span>Ability: 1.67 health per second for 5s,
+                        10 absorption hearts, and 40% less damage taken for 5s.
                     </li>
                 </ul>
             </article>
@@ -439,11 +470,14 @@
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts ~3s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                    <li class="flex gap-2"><span class="text-violet-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> 3.2 block reach (was 3).
+                    </li>
                     <li class="flex gap-2"><span class="text-violet-400">•</span>Teleport up to 14 blocks where you
-                        look.
+                        look, whichever way you're facing.
                     </li>
                     <li class="flex gap-2"><span class="text-violet-400">•</span>Enemy players within 6 blocks of your
-                        start point are frozen for ~2.75s (trusted players excluded).
+                        start point are frozen for ~3s (trusted players excluded).
                     </li>
                 </ul>
                 <p class="mt-3 text-xs italic text-slate-500">Great for escaping, or for a head start.</p>
@@ -455,15 +489,16 @@
                         src="Static/Assets/Images/Stones/Miner_Stone.png" alt="Miner Stone icon"
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Miner Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
-                    <span class="rounded-full bg-amber-500/10 px-2.5 py-1 text-amber-300">Cooldown 50s</span>
+                    <span class="rounded-full bg-amber-500/10 px-2.5 py-1 text-amber-300">Cooldown 40s</span>
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 10s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
                     <li class="flex gap-2"><span class="text-amber-400">•</span><span
-                            class="font-semibold text-slate-300">Always on:</span> Haste I while equipped.
+                            class="font-semibold text-slate-300">Always on:</span> +20% mining speed while equipped.
                     </li>
-                    <li class="flex gap-2"><span class="text-amber-400">•</span>Ability: pickaxe blocks also break a 3×3
-                        square around them. Containers, liquids and unbreakables are left alone.
+                    <li class="flex gap-2"><span class="text-amber-400">•</span>Ability: +75% mining speed, and pickaxe
+                        blocks also break a 3×3 square around them. Containers, liquids and unbreakables are left
+                        alone.
                     </li>
                 </ul>
             </article>
@@ -475,11 +510,14 @@
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Mischief Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-fuchsia-500/10 px-2.5 py-1 text-fuchsia-300">Cooldown 45s</span>
-                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 15s</span>
+                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 8s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                    <li class="flex gap-2"><span class="text-fuchsia-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> 5.5 block reach (was 4.5).
+                    </li>
                     <li class="flex gap-2"><span class="text-fuchsia-400">•</span>Every enemy player within 12 blocks
-                        gets Blindness + Weakness II for 15s.
+                        gets Darkness + Weakness II for 8s.
                     </li>
                     <li class="flex gap-2"><span class="text-fuchsia-400">•</span>Trusted players and Creative/Spectator
                         are unaffected.
@@ -501,7 +539,7 @@
                             class="font-semibold text-slate-300">Always on:</span> Hero of the Village II (cheaper
                         villager trades).
                     </li>
-                    <li class="flex gap-2"><span class="text-lime-400">•</span>Ability: 64 charged emeralds -
+                    <li class="flex gap-2"><span class="text-lime-400">•</span>Ability: 3 charged emeralds -
                         right-click to charge 1s, then it's thrown for 4 damage (2 hearts).
                     </li>
                     <li class="flex gap-2"><span class="text-lime-400">•</span>Can't be dropped. Leftovers turn into
@@ -518,13 +556,13 @@
                         class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">New</span>
                 </h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
-                    <span class="rounded-full bg-rose-500/10 px-2.5 py-1 text-rose-300">Cooldown 65s</span>
-                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 10s</span>
+                    <span class="rounded-full bg-rose-500/10 px-2.5 py-1 text-rose-300">Cooldown 60s</span>
+                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 7.5s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-rose-400">•</span>Speed II for 6s, Strength II for 3s.</li>
-                    <li class="flex gap-2"><span class="text-rose-400">•</span>For 10s, every hit heals you 2 (1 heart),
-                        up to 8 (4 hearts) per use.
+                    <li class="flex gap-2"><span class="text-rose-400">•</span>+20% speed and +10% damage for 6.5s.</li>
+                    <li class="flex gap-2"><span class="text-rose-400">•</span>For 7.5s, every hit heals you 2 (1
+                        heart), up to 10 (5 hearts) per use.
                     </li>
                 </ul>
             </article>
@@ -541,10 +579,13 @@
                     <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 5s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                    <li class="flex gap-2"><span class="text-sky-400">•</span>A wind burst hits every enemy within 6
-                        blocks: 6 damage (3 hearts), blown back ~15 blocks.
+                    <li class="flex gap-2"><span class="text-sky-400">•</span><span
+                            class="font-semibold text-slate-300">Always on:</span> Moves more easily through the air.
                     </li>
-                    <li class="flex gap-2"><span class="text-sky-400">•</span>Speed II for 5 seconds.</li>
+                    <li class="flex gap-2"><span class="text-sky-400">•</span>A wind burst hits every enemy within 6
+                        blocks: 2 normal damage (1 heart), blown back ~15 blocks.
+                    </li>
+                    <li class="flex gap-2"><span class="text-sky-400">•</span>+20% speed for 5 seconds.</li>
                 </ul>
             </article>
         </div>
@@ -570,15 +611,16 @@
                             class="h-8 w-8 flex-none [image-rendering:pixelated]"> Sunstone</h4>
                     <div class="mt-3 flex gap-2 text-xs font-medium">
                         <span class="rounded-full bg-amber-400/15 px-2.5 py-1 text-amber-300">Cooldown 65s</span>
-                        <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 7s</span>
+                        <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 6s</span>
                     </div>
                     <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
                         <li class="flex gap-2"><span class="text-amber-400">•</span><span
-                                class="font-semibold text-slate-200">Always on:</span> Speed I, plus Strength I during
-                            the day.
+                                class="font-semibold text-slate-200">Always on:</span> +10% speed, plus +3 damage on
+                            each hit during the day.
                         </li>
-                        <li class="flex gap-2"><span class="text-amber-400">•</span>Ability: Resistance III (5s).
-                            Enemies within 8 blocks get Poison IV and are set on fire for 7s.
+                        <li class="flex gap-2"><span class="text-amber-400">•</span>Ability: 60% less damage taken for
+                            6s. A 10-block zone of fire moves with you: enemies inside take 1.5 hearts every 1.25s and
+                            are set on fire.
                         </li>
                         <li class="flex gap-2"><span class="text-amber-400">•</span>You launch ~20 blocks into the air
                             with no fall damage on landing.
@@ -593,16 +635,17 @@
                             src="Static/Assets/Images/Stones/Moonstone.png" alt="Moonstone icon"
                             class="h-8 w-8 flex-none [image-rendering:pixelated]"> Moonstone</h4>
                     <div class="mt-3 flex gap-2 text-xs font-medium">
-                        <span class="rounded-full bg-indigo-400/15 px-2.5 py-1 text-indigo-300">Cooldown 70s</span>
-                        <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts ~8.5s</span>
+                        <span class="rounded-full bg-indigo-400/15 px-2.5 py-1 text-indigo-300">Cooldown 60s</span>
+                        <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 8s</span>
                     </div>
                     <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
                         <li class="flex gap-2"><span class="text-indigo-400">•</span><span
-                                class="font-semibold text-slate-200">Always on:</span> Strength I at night.
+                                class="font-semibold text-slate-200">Always on:</span> +3 damage on each hit, at
+                            night.
                         </li>
                         <li class="flex gap-2"><span class="text-indigo-400">•</span>Ability: a warden-style beam fires
-                            from your eyes up to 32 blocks, ~2 damage every half second to anything in it. Aim by
-                            turning your head.
+                            from your eyes up to 24 blocks, ~2 damage every 0.45s to anything in it. Aim by turning
+                            your head.
                         </li>
                     </ul>
                 </article>
@@ -619,10 +662,10 @@
                     </div>
                     <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
                         <li class="flex gap-2"><span class="text-teal-400">•</span><span
-                                class="font-semibold text-slate-200">Always on:</span> Speed I.
+                                class="font-semibold text-slate-200">Always on:</span> +20% speed, plus +10% damage.
                         </li>
                         <li class="flex gap-2"><span class="text-teal-400">•</span>Fires 3 dragon fireballs, one every
-                            3s. Each hit does 6 damage (3 hearts) within 3 blocks.
+                            2s. Each hit does 5 damage (2.5 hearts) within 2 blocks.
                         </li>
                         <li class="flex gap-2"><span class="text-teal-400">•</span>Leaves a dragon-breath zone for 30s
                             (grows from 3 to 7 blocks wide), 6 damage/second after the first second.
@@ -635,7 +678,123 @@
                         </li>
                     </ul>
                 </article>
+
+                <!-- Undead Stone -->
+                <article
+                        class="rounded-2xl border border-green-400/30 bg-gradient-to-b from-green-500/10 to-transparent p-6 shadow-lg shadow-green-500/10 ring-1 ring-green-400/20">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white">
+                        <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-green-500/15 text-lg">💀</span>
+                        Undead Stone <span
+                            class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">New</span>
+                    </h4>
+                    <div class="mt-3 flex gap-2 text-xs font-medium">
+                        <span class="rounded-full bg-green-400/15 px-2.5 py-1 text-green-300">Cooldown 85s</span>
+                        <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 15s</span>
+                    </div>
+                    <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
+                        <li class="flex gap-2"><span class="text-green-400">•</span><span
+                                class="font-semibold text-slate-200">Always on:</span> hostile monsters don't attack
+                            you unless you hurt them first. The Ender Dragon and the Warden still attack.
+                        </li>
+                        <li class="flex gap-2"><span class="text-green-400">•</span>Summons 2 zombies, 1 stray and 1
+                            drowned that rise out of the ground in a triangle around you. The stray and the drowned
+                            wear full Protection IV diamond armor.
+                        </li>
+                        <li class="flex gap-2"><span class="text-green-400">•</span>They only attack players who
+                            aren't trusted, never you or your trusted friends, drop nothing when killed, can be
+                            killed by enemies, and disappear after 15 seconds.
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Alchemist Stone -->
+                <article
+                        class="rounded-2xl border border-fuchsia-400/30 bg-gradient-to-b from-fuchsia-500/10 to-transparent p-6 shadow-lg shadow-fuchsia-500/10 ring-1 ring-fuchsia-400/20">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white">
+                        <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-fuchsia-500/15 text-lg">🧪</span>
+                        Alchemist Stone <span
+                            class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">New</span>
+                    </h4>
+                    <div class="mt-3 flex gap-2 text-xs font-medium">
+                        <span class="rounded-full bg-fuchsia-400/15 px-2.5 py-1 text-fuchsia-300">Cooldown 90s</span>
+                        <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts 7s</span>
+                    </div>
+                    <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
+                        <li class="flex gap-2"><span class="text-fuchsia-400">•</span><span
+                                class="font-semibold text-slate-200">Always on:</span> positive potion effects you
+                            receive last 50% longer (speed, strength, invisibility, fire resistance and more).
+                        </li>
+                        <li class="flex gap-2"><span class="text-fuchsia-400">•</span>For 7 seconds you deal 5% more
+                            damage for each potion effect you have, up to +25%. Potion-coloured particles surge out
+                            of you.
+                        </li>
+                    </ul>
+                </article>
             </div>
+            <p class="mt-4 max-w-2xl text-xs text-slate-500">
+                The Undead and Alchemist Stones use placeholder icons until their final art is ready, and don't have
+                a crafting recipe yet.
+            </p>
+        </div>
+
+        <!-- Starter stones -->
+        <div class="mt-16">
+            <div class="mb-6 flex items-center gap-3">
+                <h3 class="text-xl font-bold text-white">Starter Stones</h3>
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-400">Not Craftable</span>
+            </div>
+            <p class="mb-6 max-w-2xl text-sm leading-relaxed text-slate-400">
+                New players pick one of these from a menu the first time they join. They have no ability, only
+                passives, can't be crafted, and an equipped starter stone is never lost when you die.
+            </p>
+
+            <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Farmer -->
+                <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-lime-500">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white">
+                        <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-lime-500/15 text-lg">🌾</span>
+                        Farmer Stone
+                    </h4>
+                    <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                        <li class="flex gap-2"><span class="text-lime-400">•</span>+15% saturation from all food
+                            except golden and enchanted golden apples.
+                        </li>
+                        <li class="flex gap-2"><span class="text-lime-400">•</span>+5% speed on dirt, grass, coarse
+                            dirt, podzol, rooted dirt, mud, farmland, dirt paths, moss and mycelium.
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Spider -->
+                <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-violet-500">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white">
+                        <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-violet-500/15 text-lg">🕷️</span>
+                        Spider Stone
+                    </h4>
+                    <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                        <li class="flex gap-2"><span class="text-violet-400">•</span>Cobwebs slow you down less.</li>
+                        <li class="flex gap-2"><span class="text-violet-400">•</span>You take 7.5% less fall damage.
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Fish -->
+                <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 border-t-4 border-t-cyan-500">
+                    <h4 class="flex items-center gap-2 text-base font-bold text-white">
+                        <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-cyan-500/15 text-lg">🐟</span>
+                        Fish Stone
+                    </h4>
+                    <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
+                        <li class="flex gap-2"><span class="text-cyan-400">•</span>You swim 10% faster.</li>
+                        <li class="flex gap-2"><span class="text-cyan-400">•</span>+3% damage while standing in
+                            water.
+                        </li>
+                    </ul>
+                </article>
+            </div>
+            <p class="mt-4 max-w-2xl text-xs text-slate-500">
+                Placeholder icons for now — real art is on the way.
+            </p>
         </div>
     </section>
 
@@ -680,6 +839,9 @@
             </p>
             <p class="mt-3 text-sm leading-relaxed text-slate-400">
                 If you get an "unstable stone" item, sneak + right-click with it to start the trial.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                If a recipe calls for a potion, any variation works: long, strong (level II), splash and lingering.
             </p>
             <p class="mt-3 text-sm leading-relaxed text-slate-400">
                 There may be restrictions enforced server-by-server about when and where stones can be crafted (e.g.,
