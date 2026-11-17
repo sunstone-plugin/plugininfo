@@ -322,7 +322,10 @@
                         cobwebs.
                     </li>
                     <li class="flex gap-2"><span class="text-purple-400">•</span>Full invisibility — mobs lose track of
-                        you too, and others can't see you at all, even in armor.
+                        you too, and others can't see you at all, even your armor.
+                    </li>
+                    <li class="flex gap-2"><span class="text-purple-400">•</span>While active, nothing can hit you —
+                        players, mobs, arrows and explosions all miss. Fall damage and fire still hurt.
                     </li>
                     <li class="flex gap-2"><span class="text-purple-400">•</span>+60% speed.</li>
                 </ul>
@@ -341,7 +344,7 @@
                     <li class="flex gap-2"><span class="text-red-400">•</span><span
                             class="font-semibold text-slate-300">Always on:</span> +1 armor toughness.
                     </li>
-                    <li class="flex gap-2"><span class="text-red-400">•</span>Everything you hit does 30% more damage
+                    <li class="flex gap-2"><span class="text-red-400">•</span>Everything you hit does 20% more damage
                         for 8 seconds. Simple and strong for close fights.
                     </li>
                 </ul>
@@ -366,7 +369,7 @@
                     <li class="flex gap-2"><span class="text-blue-400">•</span>Enemies touched take ~2 normal damage
                         (armor reduces it) every half second, pushed back and up.
                     </li>
-                    <li class="flex gap-2"><span class="text-blue-400">•</span>Wave ends → +15% damage for 4s.</li>
+                    <li class="flex gap-2"><span class="text-blue-400">•</span>Wave ends → +5% damage for 4s.</li>
                 </ul>
             </article>
 
@@ -436,7 +439,7 @@
                     <li class="flex gap-2"><span class="text-cyan-400">•</span>Dash forward where you look (no fall
                         damage from the dash).
                     </li>
-                    <li class="flex gap-2"><span class="text-cyan-400">•</span>+60% speed for 8 seconds.</li>
+                    <li class="flex gap-2"><span class="text-cyan-400">•</span>+25% speed for 8 seconds.</li>
                 </ul>
             </article>
 
@@ -467,7 +470,7 @@
                         class="h-8 w-8 flex-none [image-rendering:pixelated]"> Escaper Stone</h4>
                 <div class="mt-3 flex gap-2 text-xs font-medium">
                     <span class="rounded-full bg-violet-500/10 px-2.5 py-1 text-violet-300">Cooldown 45s</span>
-                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts ~3s</span>
+                    <span class="rounded-full bg-white/5 px-2.5 py-1 text-slate-400">Lasts ~2s</span>
                 </div>
                 <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
                     <li class="flex gap-2"><span class="text-violet-400">•</span><span
@@ -477,7 +480,7 @@
                         look, whichever way you're facing.
                     </li>
                     <li class="flex gap-2"><span class="text-violet-400">•</span>Enemy players within 6 blocks of your
-                        start point are frozen for ~3s (trusted players excluded).
+                        start point are frozen for ~2s (trusted players excluded).
                     </li>
                 </ul>
                 <p class="mt-3 text-xs italic text-slate-500">Great for escaping, or for a head start.</p>
@@ -594,12 +597,12 @@
         <div class="mt-16">
             <div class="mb-6 flex items-center gap-3">
                 <h3 class="text-xl font-bold text-white">Event Stones</h3>
-                <span class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">Not Craftable</span>
             </div>
             <p class="mb-6 max-w-2xl text-sm leading-relaxed text-slate-400">
-                These are special. You can't craft them. Staff hand them out at events, and there is no limit on how
-                many exist, but usually only one of each is handed out each season. These are some of the best stones on
-                the server.
+                These are special. The Sunstone, Moonstone and Dragon Stone can't be crafted — staff hand them out at
+                events, and there is no limit on how many exist, but usually only one of each is handed out each
+                season. The Undead and Alchemist Stones can be crafted like any other stone. These are some of the
+                best stones on the server.
             </p>
 
             <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -662,15 +665,12 @@
                     </div>
                     <ul class="mt-4 space-y-1.5 text-sm text-slate-300">
                         <li class="flex gap-2"><span class="text-teal-400">•</span><span
-                                class="font-semibold text-slate-200">Always on:</span> +20% speed, plus +10% damage.
+                                class="font-semibold text-slate-200">Always on:</span> +20% speed, plus +5% damage.
                         </li>
-                        <li class="flex gap-2"><span class="text-teal-400">•</span>Fires 3 dragon fireballs, one every
-                            2s. Each hit does 5 damage (2.5 hearts) within 2 blocks.
+                        <li class="flex gap-2"><span class="text-teal-400">•</span>Ability is only the 3 dragon
+                            fireballs now, one every 2s. Each hit does 5 damage (2.5 hearts) within 2 blocks.
                         </li>
-                        <li class="flex gap-2"><span class="text-teal-400">•</span>Leaves a dragon-breath zone for 30s
-                            (grows from 3 to 7 blocks wide), 6 damage/second after the first second.
-                        </li>
-                        <li class="flex gap-2"><span class="text-teal-400">•</span>Fireballs and zones never hurt you or
+                        <li class="flex gap-2"><span class="text-teal-400">•</span>Fireballs never hurt you or
                             trusted players.
                         </li>
                         <li class="flex gap-2"><span class="text-teal-400">•</span>The player that gets the dragon egg
@@ -684,8 +684,9 @@
                         class="rounded-2xl border border-green-400/30 bg-gradient-to-b from-green-500/10 to-transparent p-6 shadow-lg shadow-green-500/10 ring-1 ring-green-400/20">
                     <h4 class="flex items-center gap-2 text-base font-bold text-white">
                         <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-green-500/15 text-lg">💀</span>
-                        Undead Stone <span
-                            class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">New</span>
+                        Undead Stone
+                        <span class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">New</span>
+                        <span class="rounded-full border border-green-400/30 bg-green-400/10 px-3 py-1 text-xs font-semibold text-green-300">Craftable</span>
                     </h4>
                     <div class="mt-3 flex gap-2 text-xs font-medium">
                         <span class="rounded-full bg-green-400/15 px-2.5 py-1 text-green-300">Cooldown 85s</span>
@@ -697,8 +698,9 @@
                             you unless you hurt them first. The Ender Dragon and the Warden still attack.
                         </li>
                         <li class="flex gap-2"><span class="text-green-400">•</span>Summons 2 zombies, 1 stray and 1
-                            drowned that rise out of the ground in a triangle around you. The stray and the drowned
-                            wear full Protection IV diamond armor.
+                            husk that rise out of the ground in a triangle around you. The stray and the husk wear
+                            full Protection IV diamond armor — the stray carries a Power V bow, the husk a Sharpness
+                            III diamond sword.
                         </li>
                         <li class="flex gap-2"><span class="text-green-400">•</span>They only attack players who
                             aren't trusted, never you or your trusted friends, drop nothing when killed, can be
@@ -712,8 +714,9 @@
                         class="rounded-2xl border border-fuchsia-400/30 bg-gradient-to-b from-fuchsia-500/10 to-transparent p-6 shadow-lg shadow-fuchsia-500/10 ring-1 ring-fuchsia-400/20">
                     <h4 class="flex items-center gap-2 text-base font-bold text-white">
                         <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-fuchsia-500/15 text-lg">🧪</span>
-                        Alchemist Stone <span
-                            class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">New</span>
+                        Alchemist Stone
+                        <span class="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">New</span>
+                        <span class="rounded-full border border-fuchsia-400/30 bg-fuchsia-400/10 px-3 py-1 text-xs font-semibold text-fuchsia-300">Craftable</span>
                     </h4>
                     <div class="mt-3 flex gap-2 text-xs font-medium">
                         <span class="rounded-full bg-fuchsia-400/15 px-2.5 py-1 text-fuchsia-300">Cooldown 90s</span>
@@ -725,15 +728,14 @@
                             receive last 50% longer (speed, strength, invisibility, fire resistance and more).
                         </li>
                         <li class="flex gap-2"><span class="text-fuchsia-400">•</span>For 7 seconds you deal 5% more
-                            damage for each potion effect you have, up to +25%. Potion-coloured particles surge out
-                            of you.
+                            damage for each potion effect you have, up to +15% (three effects reaches the cap).
+                            Potion-coloured particles surge out of you.
                         </li>
                     </ul>
                 </article>
             </div>
             <p class="mt-4 max-w-2xl text-xs text-slate-500">
-                The Undead and Alchemist Stones use placeholder icons until their final art is ready, and don't have
-                a crafting recipe yet.
+                The Undead and Alchemist Stones use placeholder icons until their final art is ready.
             </p>
         </div>
 
@@ -756,10 +758,10 @@
                         Farmer Stone
                     </h4>
                     <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                        <li class="flex gap-2"><span class="text-lime-400">•</span>+15% saturation from all food
-                            except golden and enchanted golden apples.
+                        <li class="flex gap-2"><span class="text-lime-400">•</span>+7% damage while holding a hoe in
+                            your off hand.
                         </li>
-                        <li class="flex gap-2"><span class="text-lime-400">•</span>+5% speed on dirt, grass, coarse
+                        <li class="flex gap-2"><span class="text-lime-400">•</span>+10% speed on dirt, grass, coarse
                             dirt, podzol, rooted dirt, mud, farmland, dirt paths, moss and mycelium.
                         </li>
                     </ul>
@@ -772,8 +774,8 @@
                         Spider Stone
                     </h4>
                     <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                        <li class="flex gap-2"><span class="text-violet-400">•</span>Cobwebs slow you down less.</li>
-                        <li class="flex gap-2"><span class="text-violet-400">•</span>You take 7.5% less fall damage.
+                        <li class="flex gap-2"><span class="text-violet-400">•</span>Cobwebs slow you 15% less.</li>
+                        <li class="flex gap-2"><span class="text-violet-400">•</span>You take 20% less fall damage.
                         </li>
                     </ul>
                 </article>
@@ -785,7 +787,7 @@
                         Fish Stone
                     </h4>
                     <ul class="mt-4 space-y-1.5 text-sm text-slate-400">
-                        <li class="flex gap-2"><span class="text-cyan-400">•</span>You swim 10% faster.</li>
+                        <li class="flex gap-2"><span class="text-cyan-400">•</span>You swim 20% faster.</li>
                         <li class="flex gap-2"><span class="text-cyan-400">•</span>+3% damage while standing in
                             water.
                         </li>
@@ -893,6 +895,12 @@
                 </button>
                 <p class="border-t border-white/10 px-5 py-2.5 text-xs text-slate-500">Click the recipe to zoom in.</p>
             </div>
+            <p class="mt-3 max-w-2xl text-xs text-slate-500">
+                Ingredients recently changed for Water, Melee, Earth, Speed, Shadow, Escaper, Blood, Wealth and Air —
+                screenshots above are being refreshed to match. Use <code
+                    class="rounded bg-slate-800 px-1 py-0.5 text-amber-300">/stone recipe</code> in-game for the
+                current recipe in the meantime. The Undead and Alchemist Stones don't have a recipe screenshot yet.
+            </p>
         </div>
 
     </section>
